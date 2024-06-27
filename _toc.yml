@@ -1,9 +1,12 @@
 # Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+- file: 01_liter-prog
+- file: 02_fba
+- file: 03_dfba
+- file: 04_sfba
+- file: 05_neural-net
+- file: 06_visual
+- file: 07_aspen

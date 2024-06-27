@@ -1,9 +1,6 @@
-# Welcome to ChemE 231 Math Modeling
+# Welcome to Math Modeling SP25
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Math Modeling is a core undergraduate course covering the development and analysis of mathematical models for engineering systems. The course includes lectures and lab sessions. The lectures teach students math theory and applications based on pen-and-paper analysis, while the lab sessions are more hands-on sessions to train students to use computer-based tools (e.g., MATLAB) to solve problems numerically.
 
 Check out the content pages bundled with this sample book to see more.
 
