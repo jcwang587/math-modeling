@@ -14,9 +14,7 @@ kernelspec:
 
 # Literate Programming
 
-Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See [the Notebooks with MyST Markdown documentation](https://jupyterbook.org/file-types/myst-notebooks.html) for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.
+Students will learn to use the MATLAB Live Editor, which integrates code chunks and notes effectively, as their primary tool in subsequent modules. A version control system is essential for modern coding development. Students will start a personal GitHub to store their code and set up a Git plugin in MATLAB.
 
 ## An example cell
 
