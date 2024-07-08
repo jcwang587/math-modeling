@@ -12,11 +12,13 @@ kernelspec:
   name: python3
 ---
 
-# Literate Programming
+# Literate Programming and Git
 
-Students will learn to use the MATLAB Live Editor, which integrates code chunks and notes effectively, as their primary tool in subsequent modules. A version control system is essential for modern coding development. Students will start a personal GitHub to store their code and set up a Git plugin in MATLAB.
+**Literate programming** is a programming paradigm introduced in 1984 by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) in which a computer program is given as an explanation of how it works in a natural language. In this chapter, students will learn to use the MATLAB Live Editor, which integrates code chunks and notes effectively, as their primary tool in subsequent modules. 
 
-## An example cell
+**Git** is a distributed version control system that tracks versions of files. It is often used to control source code by programmers collaboratively developing software. A version control system is essential for modern coding development. Students will start a personal GitHub to store their code and set up a Git plugin in MATLAB.
+
+## MATLAB Live Editor
 
 With MyST Markdown, you can define code cells with a directive like so:
 
@@ -32,7 +34,7 @@ in-line with the rest of your content.
 Jupyter Book uses [Jupytext](https://jupytext.readthedocs.io/en/latest/) to convert text-based files to notebooks, and can support [many other text-based notebook files](https://jupyterbook.org/file-types/jupytext.html).
 ```
 
-## Create a notebook with MyST Markdown
+## Join Github
 
 MyST Markdown notebooks are defined by two things:
 
@@ -42,10 +44,14 @@ MyST Markdown notebooks are defined by two things:
 
 That's all that is needed to get started!
 
-## Quickly add YAML metadata for MyST Notebooks
+## Set Up Git Source Control
 
 If you have a markdown file and you'd like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:
 
 ```
 jupyter-book myst init path/to/markdownfile.md
 ```
+
+## My First Repository
+
+If you have a markdown file and you'd like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:
