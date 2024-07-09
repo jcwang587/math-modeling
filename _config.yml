@@ -34,6 +34,6 @@ html:
   google_analytics_id: G-SXEXTGTJM7 # for google analytics
 
 # Define the style of the reference labels
-sphinx:
-  config:
-    bibtex_reference_style: author_year
+# sphinx:
+#   config:
+#     bibtex_reference_style: author_year
