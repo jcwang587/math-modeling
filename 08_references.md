@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-## Research Journals
+# References
 
 ```{bibliography}
 
