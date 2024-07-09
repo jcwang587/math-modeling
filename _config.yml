@@ -32,3 +32,8 @@ html:
   use_issues_button: true
   use_repository_button: true
   google_analytics_id: G-SXEXTGTJM7 # for google analytics
+
+# Define the style of the reference labels
+sphinx:
+  config:
+    bibtex_reference_style: author_year
