@@ -1,3 +1,15 @@
+---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
 # Preface
 
 Math Modeling is a core undergraduate course covering the development and analysis of mathematical models for engineering systems. The course includes lectures and lab sessions. The lectures teach students math theory and applications based on pen-and-paper analysis, while the lab sessions are hands-on sessions that train students to use computer-based tools (e.g., MATLAB) to solve problems numerically.
