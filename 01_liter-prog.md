@@ -18,7 +18,7 @@ kernelspec:
 
 ## MATLAB Live Editor
 
-With MyST Markdown, you can define code cells with a directive like so:
+For the usage with MATLAB, the best native literate programming tool would be MATLAB Live Editor, which creates scripts that combine code, output, and formatted text. Divide code into manageable sections that can be run independently. View output and visualizations next to the code that produced them. Enhance your code and results with formatted text, headings, images, and hyperlinks. Insert equations using the interactive editor or create them using LaTeX. Save code, results, and formatted text in a single executable document. With MyST Markdown, you can define code cells with a directive like so:
 
 ```{code-cell}
 print(2 + 2)
