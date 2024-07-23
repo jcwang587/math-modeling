@@ -14,16 +14,13 @@ kernelspec:
 
 Flux balance analysis is a mathematical approach for analyzing the flow of metabolites through a metabolic network. This primer covers the theoretical basis of the approach, several practical examples and a software toolbox for performing the calculations.{cite:p}`orth2010flux`
 
-````
+
 ```{figure} ./figures/fig2-1.png
----
-scale: 50%
-align: center
----
+:height: 150px
+:name: figure-example
+
 Here is my figure caption!
 ```
-````
-
 
 
 ## An example cell
