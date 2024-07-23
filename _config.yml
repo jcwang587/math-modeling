@@ -33,6 +33,10 @@ html:
   use_repository_button: true
   google_analytics_id: G-SXEXTGTJM7 # for google analytics
 
+parse:
+  myst_enable_extensions:
+    - html_image
+
 # Define the style of the reference labels
 # sphinx:
 #   config:
