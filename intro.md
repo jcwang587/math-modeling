@@ -20,6 +20,11 @@ As detailed in this book, seven modules have been designed, focusing on the main
 
 In addition, we will introduce Plotly, one of the most widely used interactive graphing packages, to explore solutions and communicate results with visual insights. Other useful tools, such as the MATLAB Live Editor, Machine Learning Toolbox, GUI interface, and actxserver, will also be included. Check out the content pages bundled with this book to see more.
 
+<p style="text-align: right;">
+    Jiacheng Wang<br>
+    Peng Bai
+</p>
+
 ```{tableofcontents}
 
 ```
