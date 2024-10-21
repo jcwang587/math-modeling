@@ -39,15 +39,12 @@ in-line with the rest of your content.
 Jupyter Book uses [Jupytext](https://jupytext.readthedocs.io/en/latest/) to convert text-based files to notebooks, and can support [many other text-based notebook files](https://jupyterbook.org/file-types/jupytext.html).
 ```
 
-## Create a notebook with MyST Markdown
+## Gurobi
 
 MyST Markdown notebooks are defined by two things:
 
-1. YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-   See the YAML at the top of this page for example.
-2. The presence of `{code-cell}` directives, which will be executed with your book.
-
-That's all that is needed to get started!
+1. The Gurobi Optimizer is a state-of-the-art solver for mathematical programming. The solvers in the Gurobi Optimizer were designed from the ground up to exploit modern architectures and multicore processors, using the most advanced implementations of the latest algorithms. https://www.mathworks.com/products/connections/product_detail/gurobi-optimizer.html
+2. YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).https://support.gurobi.com/hc/en-us/articles/4533938303505-How-do-I-install-Gurobi-for-Matlab
 
 ## Quickly add YAML metadata for MyST Notebooks
 
