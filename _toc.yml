@@ -4,7 +4,7 @@ format: jb-book
 root: intro
 chapters:
 - file: 01_liter-prog
-- file: 02_github
+- file: 02_vsc
 - file: 03_fba
 - file: 04_dfba
 - file: 05_sfba

@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# Git
+# Version Source Control
 
 **Git** is a distributed version control system that tracks versions of files. It is often used to control source code by programmers collaboratively developing software. A version control system is essential for modern coding development. In this chapter, students will start a personal GitHub to store their code and set up a Git plugin in MATLAB.
 

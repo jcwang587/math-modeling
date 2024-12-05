@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# Literate Programming and Git
+# Literate Programming
 
 **Literate programming** is a programming paradigm introduced in 1984 by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) in which a computer program is given as an explanation of how it works in a natural language. In this chapter, students will learn to use the MATLAB Live Editor, which integrates code chunks and notes effectively, as their primary tool in subsequent modules. 
 
