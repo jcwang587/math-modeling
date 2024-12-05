@@ -16,21 +16,11 @@ Jupyter Book also lets you write text-based notebooks using MyST Markdown.
 See [the Notebooks with MyST Markdown documentation](https://jupyterbook.org/file-types/myst-notebooks.html) for more detailed instructions.
 This page shows off a notebook written in MyST Markdown.
 
-## An example cell
+## DFBALab
 
-With MyST Markdown, you can define code cells with a directive like so:
+The Dynamic Flux Balance Analysis laboratory (DFBAlab) is a MATLAB-based code that performs numerical integration of dynamic flux balance analysis (dFBA) systems. It provides efficient simulation of multi-culture of microbial species based on genome-scale metabolic network reconstructions for analysis, control and optimization of biochemical processes. As such, it generates dynamic predictions of substrate, biomass, and product concentrations for growth in batch or fed-batch cultures.
 
-```{code-cell}
-print(2 + 2)
-```
-
-When your book is built, the contents of any `{code-cell}` blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.
-
-```{seealso}
-Jupyter Book uses [Jupytext](https://jupytext.readthedocs.io/en/latest/) to convert text-based files to notebooks, and can support [many other text-based notebook files](https://jupyterbook.org/file-types/jupytext.html).
-```
+dFBA provides a structured model of a biochemical process, where the reaction pathways within the microorganism change depending on the environmental conditions, which is effectively represented by changes in the functional dependency on the substrate concentrations. These predictions result from the solution of linear programs (LPs). Common challenges involve the LPs becoming infeasible or nonunique solution sets. DFBAlab addresses both difficulties using the LP feasibility problem and lexicographic optimization, respectively. {cite:p}`gomez2014dfbalab`
 
 ## Create a notebook with MyST Markdown
 

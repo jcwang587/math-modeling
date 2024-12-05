@@ -4,10 +4,11 @@ format: jb-book
 root: intro
 chapters:
 - file: 01_liter-prog
-- file: 02_fba
-- file: 03_dfba
-- file: 04_sfba
-- file: 05_neural-net
-- file: 06_data-vis
-- file: 07_aspen
-- file: 08_references
+- file: 02_github
+- file: 03_fba
+- file: 04_dfba
+- file: 05_sfba
+- file: 06_neural-net
+- file: 07_data-vis
+- file: 08_aspen
+- file: 09_references
