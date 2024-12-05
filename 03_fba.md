@@ -23,33 +23,6 @@ The conceptual basis of constraint-based modeling.
 ```
 
 
-## An example cell
+## BiGG Model
 
-With MyST Markdown, you can define code cells with a directive like so:
-
-```{code-cell}
-print(2 + 2)
-```
-
-When your book is built, the contents of any `{code-cell}` blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.
-
-```{seealso}
-Jupyter Book uses [Jupytext](https://jupytext.readthedocs.io/en/latest/) to convert text-based files to notebooks, and can support [many other text-based notebook files](https://jupyterbook.org/file-types/jupytext.html).
-```
-
-## Gurobi
-
-MyST Markdown notebooks are defined by two things:
-
-1. The Gurobi Optimizer is a state-of-the-art solver for mathematical programming. The solvers in the Gurobi Optimizer were designed from the ground up to exploit modern architectures and multicore processors, using the most advanced implementations of the latest algorithms. https://www.mathworks.com/products/connections/product_detail/gurobi-optimizer.html
-2. YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).https://support.gurobi.com/hc/en-us/articles/4533938303505-How-do-I-install-Gurobi-for-Matlab
-
-## Quickly add YAML metadata for MyST Notebooks
-
-If you have a markdown file and you'd like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:
-
-```
-jupyter-book myst init path/to/markdownfile.md
-```
+*BiGG Models* is open source. *BiGG Models* is open source, so you can browse the code, submit issues, and contribute on GitHub.{cite:p}`norsigian2020bigg`
