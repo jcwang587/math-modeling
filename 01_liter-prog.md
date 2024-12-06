@@ -12,7 +12,23 @@ kernelspec:
 
 # Literate Programming
 
-**Literate programming** is a programming paradigm introduced in 1984 by Donald Knuth in which a computer program is given as an explanation of how it works in a natural language.{cite:p}`knuth1984literate` In this chapter, students will learn to use the MATLAB Live Editor, which integrates code chunks and notes effectively, as their primary tool in subsequent modules. 
+Literate programming is a programming paradigm introduced in 1984 by Donald Knuth {cite:p}`knuth1984literate`, in which a computer program is presented as an explanation of how it works in natural language, interwoven with the code it describes. By combining prose and source code, literate programming facilitates the communication of computational thinking, making it particularly valuable in educational settings. Typically, a markup language is used to format explanatory text blocks, and a programming language is embedded for executable code blocks.
+
+MATLAB, a popular programming language in STEM research, provides the MATLAB Live Editor as a tool to create MATLAB Live Scripts. These scripts, identified by the `.mlx` file extension, integrate formatted text and computational code into a single, publishable file. Within these scripts, a simplified version of Markdown and LaTeX is used to format text. MATLAB Live Scripts can be created both locally with the desktop version of MATLAB and online using MATLAB Online, making them convenient for instructional use and collaboration. The following screenshot 
+
+```{figure} ./figures/fig2-1.png
+{figure} ./figures/fig1-1.png
+```
+
+
+
+```{note}
+it is important to note that on the topright hand side of the live editorcode outputs can be rendered to eitherthe right or in linewith thewith thematlab live scriptcode can also be hidden entirelythis is particularly important to knowwhen viewingshared matlab live scripts as code maybe hidden by default if the creatorplanned to center focus on includedinteractive elementsmatlab code alsorequires that functions are defined atthe end of the documentwhich is a common source of confusionfor individuals with experience withother prominent programming languages such as python.
+```
+
+
+
+Jupyter Notebooks offer a free and open-source alternative to MATLAB Live Scripts. Identified by the `.ipynb` file extension, Jupyter Notebooks can be created online through services like Google Colab or locally with standalone clients. By default, Jupyter Notebooks use Markdown and LaTeX to format text cells and Python to execute code cells, though they support over forty programming languages. Unlike MATLAB, Python requires that functions be defined before they are called, necessitating that functions appear earlier in a Jupyter Notebook rather than at the end. Another noteworthy feature is that Jupyter Notebooks render directly on GitHub, a platform widely used in STEM research. The illustrations provided show portions of Jupyter Notebook source code, the rendered results, and an example of how a Jupyter Notebook is displayed on GitHub.
 
 ## MATLAB Live Editor
 

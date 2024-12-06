@@ -26,7 +26,7 @@ To get started with GitHub, you'll need to create a free personal account and ve
 
 The Git [cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf) shows the command line operations such as Add, Commit, Push, Pull and Fetch.
 
-```{tips}
+```{tip}
 To enable source control integration in MATLAB, you might need to go to Preferences and choose General, Source Conrol and activate MathWorks source control integration to be enabled.
 ```
 
