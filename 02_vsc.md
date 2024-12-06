@@ -18,7 +18,7 @@ kernelspec:
 
 To get started with GitHub, you'll need to create a free personal account and verify your email address.
 
-1. Navigate to [GitHub https://github.com/](https://github.com/).
+1. Navigate to [https://github.com/](https://github.com/).
 2. Click **Sign up**.
 3. Follow the prompts to create your personal account.
 
