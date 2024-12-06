@@ -17,7 +17,7 @@ Literate programming is a programming paradigm introduced in 1984 by Donald Knut
 MATLAB, a popular programming language in STEM research, provides the MATLAB Live Editor as a tool to create MATLAB Live Scripts. These scripts, identified by the `.mlx` file extension, integrate formatted text and computational code into a single, publishable file. Within these scripts, a simplified version of Markdown and LaTeX is used to format text. MATLAB Live Scripts can be created both locally with the desktop version of MATLAB and online using MATLAB Online, making them convenient for instructional use and collaboration. The following screenshot 
 
 ```{figure} ./figures/fig1-1.png
-:height: 200px
+:height: 400px
 :name: figure-example
 
 The screenshot for the MATLAB Live Editor.
