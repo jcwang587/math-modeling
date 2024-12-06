@@ -16,14 +16,18 @@ Literate programming is a programming paradigm introduced in 1984 by Donald Knut
 
 MATLAB, a popular programming language in STEM research, provides the MATLAB Live Editor as a tool to create MATLAB Live Scripts. These scripts, identified by the `.mlx` file extension, integrate formatted text and computational code into a single, publishable file. Within these scripts, a simplified version of Markdown and LaTeX is used to format text. MATLAB Live Scripts can be created both locally with the desktop version of MATLAB and online using MATLAB Online, making them convenient for instructional use and collaboration. The following screenshot 
 
-```{figure} ./figures/fig2-1.png
-{figure} ./figures/fig1-1.png
+```{figure} ./figures/fig1-1.png
+:height: 200px
+:name: figure-example
+
+The screenshot for the MATLAB Live Editor.
 ```
 
 
 
 ```{note}
-it is important to note that on the topright hand side of the live editorcode outputs can be rendered to eitherthe right or in linewith thewith thematlab live scriptcode can also be hidden entirelythis is particularly important to knowwhen viewingshared matlab live scripts as code maybe hidden by default if the creatorplanned to center focus on includedinteractive elementsmatlab code alsorequires that functions are defined atthe end of the documentwhich is a common source of confusionfor individuals with experience withother prominent programming languages such as python.
+- It is important to note that, in the MATLAB Live Editor, code outputs can be rendered either alongside the text (in line) or to the right. The code itself can also be hidden entirely, a feature particularly relevant when viewing shared MATLAB Live Scripts. Hidden code may be the default, especially if the script’s creator intended to focus the reader’s attention on interactive elements.
+- Another key point is that MATLAB code requires functions to be defined at the end of the document. This practice often confuses users familiar with other programming languages, such as Python, where functions are commonly defined before they are called.
 ```
 
 
