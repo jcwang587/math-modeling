@@ -47,10 +47,7 @@ sphinx:
     
 
 launch_buttons:
-  # URL for the BinderHub you want to use. This is the default.
   binderhub_url: "https://mybinder.org"
   binder: true
-  colab: false
-  deepnote: false
-  jupyterhub: false
-  thebe: true
+
+thebe: true
