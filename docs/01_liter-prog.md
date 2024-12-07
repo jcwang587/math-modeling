@@ -66,7 +66,7 @@ As you can see, we have defined named cells (`stats-data-gen`, `stats-computatio
 
 The figure below shows an example of the MATLAB Live Editor in action. The left-hand side of the interface allows users to input and edit code, formatted text, and equations using LaTeX, while the right-hand side displays the results of the executed code in real time. This dual-panel layout facilitates a seamless workflow, enabling users to combine narrative descriptions with computational output. MATLAB Live Scripts are particularly useful for creating interactive tutorials, documenting research workflows, and sharing reproducible analyses, as they integrate code, results, and explanatory text into a single, organized document.
 
-```{figure} ./figures/fig1-1.png
+```{figure} _static/fig1-1.png
 :height: 400px
 :name: figure-example
 
