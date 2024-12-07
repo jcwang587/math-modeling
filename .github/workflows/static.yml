@@ -34,7 +34,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: '3.11'
         
       - name: Install dependencies
         run: |
@@ -43,7 +43,7 @@ jobs:
 
       - name: Build Jupyter Book
         run: |
-          jupyter-book build .
+          jupyter-book build docs/
           
       - name: Setup Pages
         uses: actions/configure-pages@v5
