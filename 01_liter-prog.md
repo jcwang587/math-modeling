@@ -14,7 +14,7 @@ kernelspec:
 
 **Literate programming** is a programming paradigm introduced in 1984 by Donald Knuth {cite:p}`knuth1984literate`, in which a computer program is presented as an explanation of how it works in natural language, interwoven with the code it describes. By combining prose and source code, literate programming facilitates the communication of computational thinking, making it particularly valuable in educational settings. Typically, a markup language is used to format explanatory text blocks, and a programming language is embedded for executable code blocks.
 
-#### Example 1: Simple Narrative with a Single Code Cell
+- Example 1: Simple Narrative with a Single Code Cell
 
 In literate programming, we mix text and code to explain what is happening in a computation as we develop it. Here is a simple Python code cell that calculates the factorial of 5:
 
@@ -25,7 +25,7 @@ def factorial(n):
 factorial(5)
 ```
 
-#### Example 2: Using Directive Options and Cross-Referencing
+- Example 2: Using Directive Options and Cross-Referencing
 
 In this example, we introduce a dataset and then compute basic statistical measures (mean and standard deviation). We'll start by generating some random data:
 
