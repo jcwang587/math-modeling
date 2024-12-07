@@ -14,16 +14,51 @@ kernelspec:
 
 **Literate programming** is a programming paradigm introduced in 1984 by Donald Knuth {cite:p}`knuth1984literate`, in which a computer program is presented as an explanation of how it works in natural language, interwoven with the code it describes. By combining prose and source code, literate programming facilitates the communication of computational thinking, making it particularly valuable in educational settings. Typically, a markup language is used to format explanatory text blocks, and a programming language is embedded for executable code blocks.
 
-Here is a simple Python code cell that calculates the factorial of 5:
+### Example 1: Simple Narrative with a Single Code Cell
 
-```{code-cell}
+In literate programming, we mix text and code to explain what is happening in a computation as we develop it. Here is a simple Python code cell that calculates the factorial of 5:
+
+```{code-cell} python
 def factorial(n):
     return 1 if n == 0 else n * factorial(n-1)
 
 factorial(5)
 ```
 
+### Example 2: Using Directive Options and Cross-Referencing
 
+In this example, we introduce a dataset and then compute basic statistical measures (mean and standard deviation). We'll start by generating some random data:
+
+```{code-cell} python
+import numpy as np
+
+data = np.random.normal(loc=0, scale=1, size=1000)
+data[:10]
+```
+
+We can reference this code cell as {ref}`stats-data-gen`. In {ref}`stats-computation` we’ll compute some statistics.
+
+```{code-cell} python
+---
+tags: [remove-input]
+name: stats-data-gen
+---
+# Generate summary statistics: mean and standard deviation
+mean_val = np.mean(data)
+std_val = np.std(data)
+mean_val, std_val
+```
+
+In the cell below, we show the computation of these statistics explicitly, and we will reference this cell as {ref}`stats-computation`.
+
+```{code-cell} python
+---
+name: stats-computation
+---
+print(f"Mean: {mean_val}, Standard Deviation: {std_val}")
+```
+
+As you can see, we have defined named cells (`stats-data-gen`, `stats-computation`) and can refer to them in our text. This allows us to build a cohesive narrative around the code, mentioning where data is generated and where it is used.
 
 ## MATLAB Live Editor
 
