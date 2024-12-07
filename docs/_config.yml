@@ -51,5 +51,4 @@ launch_buttons:
   colab: false
   deepnote: false
   jupyterhub: false
-
-thebe: true
+  thebe: true

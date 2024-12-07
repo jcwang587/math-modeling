@@ -18,7 +18,7 @@ kernelspec:
 
 In literate programming, we mix text and code to explain what is happening in a computation as we develop it. Here is a simple Python code cell that calculates the factorial of 5:
 
-```{code-cell} ipython3
+```{code-cell} python
 def factorial(n):
     return 1 if n == 0 else n * factorial(n-1)
 
@@ -29,7 +29,7 @@ factorial(5)
 
 In this example, we introduce a dataset and then compute basic statistical measures (mean and standard deviation). We'll start by generating some random data:
 
-```{code-cell} ipython3
+```{code-cell} python
 import numpy as np
 
 data = np.random.normal(loc=0, scale=1, size=1000)
@@ -38,7 +38,7 @@ data[:10]
 
 We can reference this code cell as {ref}`stats-data-gen`. In {ref}`stats-computation` we’ll compute some statistics.
 
-```{code-cell} ipython3
+```{code-cell} python
 ---
 tags: [remove-input]
 name: stats-data-gen
@@ -51,7 +51,7 @@ mean_val, std_val
 
 In the cell below, we show the computation of these statistics explicitly, and we will reference this cell as {ref}`stats-computation`.
 
-```{code-cell} ipython3
+```{code-cell} python
 ---
 name: stats-computation
 ---
