@@ -22,13 +22,6 @@ To further enrich the learning experience, we introduce advanced visualization a
 
 We invite readers to explore the accompanying content pages, which provide detailed instructions, sample codes, and troubleshooting tips.
 
-
-
-<p style="text-align: right;">
-    Jiacheng Wang<br>
-    Peng Bai
-</p>
-
 ```{tableofcontents}
 
 ```
