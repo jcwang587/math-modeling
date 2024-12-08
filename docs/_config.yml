@@ -4,7 +4,6 @@
 title: Math Modeling
 author: Jiacheng Wang
 copyright: "2024-2025"
-logo: _static/logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -40,8 +39,8 @@ parse:
 # Define the style of the reference labels
 sphinx:
   config:
+    html_logo: "_static/logo.png"
     bibtex_reference_style: author_year
-    
 
 launch_buttons:
   binderhub_url: "https://mybinder.org"
