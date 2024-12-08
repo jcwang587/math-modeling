@@ -8,7 +8,7 @@
 title                       : Math Modeling
 author                      : Jiacheng Wang
 copyright                   : "2024-2025"
-logo                        : "_static/logo.png"
+logo                        : "_static/logo.svg"
 exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
 only_build_toc_files        : false
 
