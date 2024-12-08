@@ -20,7 +20,7 @@ This book presents a structured set of seven modules centered around metabolic m
 
 To further enrich the learning experience, we introduce advanced visualization and interface-building tools. Plotly, a leading interactive graphing library, will be used to transform raw computational results into intuitive, high-quality visualizations. Additional resources, including the MATLAB Live Editor, Machine Learning Toolbox, GUI interfaces, and the actxserver function, are integrated to create a well-rounded computational ecosystem.
 
-We recommend exploring the content pages, which provide clear theoretical foundations, practical guidance, and illustrative sample codes to support your journey in mathematical modeling.
+It is our hope that the content pages, which offer clear theoretical foundations, practical guidance, and illustrative sample codes, will serve as a valuable resource to support readers on their journey in mathematical modeling within chemical engineering.
 
 <div style="text-align: right;">
 <br><br>Jiacheng Wang<br>Peng Bai
