@@ -39,10 +39,7 @@ parse:
 # Define the style of the reference labels
 sphinx:
   config:
-    html_logo: "_static/logo.png"
     bibtex_reference_style: author_year
-    html_theme_options:
-      logo_only: false
 
 launch_buttons:
   binderhub_url: "https://mybinder.org"
