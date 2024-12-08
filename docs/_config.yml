@@ -4,6 +4,7 @@
 title: Math Modeling
 author: Jiacheng Wang
 copyright: "2024-2025"
+logo: _staic/logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
