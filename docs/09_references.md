@@ -12,6 +12,15 @@ kernelspec:
 
 # References
 
+## Cited Works
+
 ```{bibliography}
 :style: unsrt
 ```
+
+## Useful Links and Resources 
+
+- [Python Documentation](https://docs.python.org/3/) 
+- [Jupyter Book Documentation](https://jupyterbook.org/) 
+- [Gurobi Optimization Solver](https://www.gurobi.com/)
+
