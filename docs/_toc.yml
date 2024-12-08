@@ -1,7 +1,7 @@
 # Table of contents
 
 format: jb-book
-root: intro
+root: index
 chapters:
 - file: 01_liter-prog
 - file: 02_vsc
