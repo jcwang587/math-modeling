@@ -32,7 +32,6 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-  google_analytics_id: G-SXEXTGTJM7 # for google analytics
 
 parse:
   myst_enable_extensions:
@@ -48,7 +47,6 @@ sphinx:
     
 
 launch_buttons:
-  notebook_interface: "classic"
+  colab_url: "https://colab.research.google.com"
+  notebook_interface: "jupyterlab"
   binderhub_url: "https://mybinder.org"
-  binder: true
-  thebe: true
