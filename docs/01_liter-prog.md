@@ -4,8 +4,6 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.16.4
 kernelspec:
   display_name: Python 3
   language: python
@@ -32,7 +30,7 @@ factorial(5)
 
 In this example, we introduce a dataset and then compute basic statistical measures (mean and standard deviation). We'll start by generating some random data:
 
-```{code-cell} ipython3
+```{code-cell} python
 import numpy as np
 
 data = np.random.normal(loc=0, scale=1, size=1000)
