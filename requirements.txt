@@ -1,3 +1,4 @@
+sphinx
 jupyter-book
 matplotlib
 numpy
