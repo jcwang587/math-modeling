@@ -47,7 +47,7 @@ sphinx:
     
 
 launch_buttons:
+  notebook_interface: "classic"
   binderhub_url: "https://mybinder.org"
   binder: true
-
-thebe: true
+  thebe: true
