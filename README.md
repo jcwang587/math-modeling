@@ -1,1 +1,1 @@
-Chemical Engineering 231 Mathematical Modeling Spring 2025
+# Chemical Engineering 231 Mathematical Modeling Spring 2025
