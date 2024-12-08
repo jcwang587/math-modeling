@@ -43,7 +43,7 @@ jobs:
 
       - name: Build Jupyter Book
         run: |
-          jupyter-book build docs/
+          jupyter book build docs/
     
       - name: Setup Pages
         uses: actions/configure-pages@v5
