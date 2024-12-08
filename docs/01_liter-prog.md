@@ -39,8 +39,6 @@ data = np.random.normal(loc=0, scale=1, size=1000)
 data[:10]
 ```
 
-In the cell below, we show the computation of these statistics explicitly, and we will reference this cell as {ref}`stats-computation`.
-
 As you can see, we have defined named cells (`stats-data-gen`, `stats-computation`) and can refer to them in our text. This allows us to build a cohesive narrative around the code, mentioning where data is generated and where it is used.
 
 ## MATLAB Live Editor
