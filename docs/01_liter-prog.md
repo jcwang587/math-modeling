@@ -39,25 +39,9 @@ data = np.random.normal(loc=0, scale=1, size=1000)
 data[:10]
 ```
 
-We can reference this code cell as {ref}`stats-data-gen`. In {ref}`stats-computation` we’ll compute some statistics.
-
-```{code-cell} python
----
-tags: [remove-input]
-name: stats-data-gen
----
-# Generate summary statistics: mean and standard deviation
-mean_val = np.mean(data)
-std_val = np.std(data)
-mean_val, std_val
-```
-
 In the cell below, we show the computation of these statistics explicitly, and we will reference this cell as {ref}`stats-computation`.
 
 ```{code-cell} python
----
-name: stats-computation
----
 print(f"Mean: {mean_val}, Standard Deviation: {std_val}")
 ```
 

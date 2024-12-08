@@ -41,9 +41,6 @@ parse:
 sphinx:
   config:
     bibtex_reference_style: author_year
-    numfig: true
-    numfig_secnum_depth: 1
-    logo_only: false
     
 
 launch_buttons:

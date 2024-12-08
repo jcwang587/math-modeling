@@ -17,7 +17,7 @@ Flux balance analysis is a mathematical approach for analyzing the flow of metab
 
 ```{figure} _static/fig2-1.png
 :height: 200px
-:name: figure-example
+:name: figure-fba
 
 The conceptual basis of constraint-based modeling.
 ```
