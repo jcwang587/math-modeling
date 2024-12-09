@@ -12,27 +12,30 @@ logo                        : "_static/logo.png"
 exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
 only_build_toc_files        : false
 
-
 #######################################################################################
 # Execution settings
 execute:
   execute_notebooks         : auto  
 
+#######################################################################################
 # Define the name of the latex output file for PDF builds
 latex:
   latex_engine: pdflatex
   use_jupyterbook_latex: true
 
+#######################################################################################
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
   - _bibliography/references.bib
 
+#######################################################################################
 # Information about where the book exists on the web
 repository:
   url: https://github.com/jcwang587/math-modeling
   path_to_book: .
   branch: main 
 
+#######################################################################################
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
@@ -41,18 +44,20 @@ html:
   extra_css:
     - _static/custom.css
 
+#######################################################################################
 parse:
   myst_enable_extensions:
     - html_image
 
+#######################################################################################
 # Define the style of the reference labels
 sphinx:
   config:
     bibtex_reference_style: author_year
 
+#######################################################################################
 launch_buttons:
   binderhub_url: "https://mybinder.org"
   binder: true
   notebook_interface: "jupyterlab"
 thebe: true
-
