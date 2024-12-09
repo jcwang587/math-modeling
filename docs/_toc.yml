@@ -17,6 +17,4 @@ parts:
       - file: 06_neural-net
       - file: 07_data-vis
       - file: 08_aspen
-  - caption: Appendices
-    chapters:
-      - file: 09_references
+  - file: 09_references
