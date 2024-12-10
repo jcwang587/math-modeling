@@ -60,4 +60,4 @@ launch_buttons:
   binderhub_url: "https://mybinder.org"
   binder: true
   notebook_interface: "jupyterlab"
-thebe: true
+  thebe: true
