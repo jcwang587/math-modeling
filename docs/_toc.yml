@@ -2,7 +2,7 @@
 
 format: jb-book
 root: preface
-parts:
+- parts:
   - caption: Preliminaries
     chapters:
       - file: 01_liter-prog
@@ -17,5 +17,5 @@ parts:
       - file: 06_neural-net
       - file: 07_data-vis
       - file: 08_aspen
-chapters:
+- chapters:
   - file: 09_references
