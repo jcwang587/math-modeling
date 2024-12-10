@@ -10,7 +10,6 @@ kernelspec:
   name: python3
 ---
 
-(launch:thebe)=
 # Literate Programming
 
 **Literate programming** is a programming paradigm introduced in 1984 by Donald Knuth {cite:p}`knuth1984literate`, in which a computer program is presented as an explanation of how it works in natural language, interwoven with the code it describes. By combining prose and source code, literate programming facilitates the communication of computational thinking, making it particularly valuable in educational settings. Typically, a markup language is used to format explanatory text blocks, and a programming language is embedded for executable code blocks.
