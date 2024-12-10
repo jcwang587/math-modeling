@@ -9,7 +9,7 @@ kernelspec:
   language: python
   name: python3
 launch_buttons:
-  thebe: false	
+  thebe: false
   binder: false
 ---
 
