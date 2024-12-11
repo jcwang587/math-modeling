@@ -2,7 +2,6 @@
 
 format: jb-book
 root: preface
-
 - file: preface
 - part: Preliminaries
   chapters:
