@@ -1,18 +1,17 @@
 format: jb-book
 root: preface
-
 chapters:
   - file: preface
-  - part: Preliminaries
+  - part: "Preliminaries"
     chapters:
       - file: 01_liter-prog
       - file: 02_vsc
-  - part: Metabolic Modeling
+  - part: "Metabolic Modeling"
     chapters:
       - file: 03_fba
       - file: 04_dfba
       - file: 05_sfba
-  - part: Advanced Topics
+  - part: "Advanced Topics"
     chapters:
       - file: 06_neural-net
       - file: 07_data-vis
