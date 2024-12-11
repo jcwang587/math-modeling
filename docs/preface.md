@@ -1,4 +1,8 @@
 ---
+thebe: false
+launch_buttons:
+  binder: false
+  thebe: false
 jupytext:
   formats: md:myst
   text_representation:
@@ -8,9 +12,6 @@ kernelspec:
   display_name: Python 3
   language: python
   name: python3
-launch_buttons:
-  thebe: false
-  binder: false
 ---
 
 # Preface
