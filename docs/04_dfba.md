@@ -18,7 +18,7 @@ Dynamic model predictions for anaerobic batch growth of wild-type *E. coli* and 
 
 
 ```{figure} _static/fig4-1.png
-:height: 200px
+:height: 400px
 :name: figure-fba
 
 Comparison of DFBALab model predictions and experimental data ({cite:p}`mark2008exp`) for wild-type E. coli aerobically consuming a mixture of glucose and xylose.
