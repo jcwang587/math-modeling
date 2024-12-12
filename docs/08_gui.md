@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# Graphical User Interfaces
+# Battleship Game
 
 Graphical user interfaces (GUIs), also known as apps, provide point-and-click control of your software applications, eliminating the need for others to learn a language or type commands in order to run the application. You can share apps both for use within MATLAB and also as standalone desktop or web apps. 
 
