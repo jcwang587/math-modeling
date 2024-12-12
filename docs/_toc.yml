@@ -16,7 +16,8 @@ parts:
     chapters:
       - file: 06_neural-net
       - file: 07_data-vis
-      - file: 08_aspen
+      - file: 08_gui
+      - file: 09_aspen
   - caption: Resources
     chapters:
-      - file: 09_references
+      - file: 10_references
