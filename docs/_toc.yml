@@ -14,9 +14,9 @@ parts:
       - file: 05_sfba
   - caption: Advanced Topics
     chapters:
-      - file: 06_neural-net
-      - file: 07_data-vis
-      - file: 08_gui
+      - file: 06_data-vis
+      - file: 07_gui
+      - file: 08_neural-net
       - file: 09_aspen
   - caption: Resources
     chapters:
