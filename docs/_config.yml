@@ -55,6 +55,7 @@ parse:
 sphinx:
   config:
     bibtex_reference_style: author_year
+    numfig: true
 
 #######################################################################################
 launch_buttons:
