@@ -12,7 +12,7 @@ kernelspec:
 
 # Flux Balance Analysis
 
-Flux balance analysis is a mathematical approach for analyzing the flow of metabolites through a metabolic network. This primer covers the theoretical basis of the approach, several practical examples and a software toolbox for performing the calculations. {cite:p}`orth2010flux`
+Flux balance analysis (FBA) is a mathematical framework for analyzing the flow of metabolites through a metabolic network. This primer introduces the theoretical foundations of FBA, presents several practical examples, and provides a software toolbox to facilitate the necessary calculations {cite:p}`orth2010flux`.
 
 
 ```{figure} _static/fig2-1.png
@@ -32,4 +32,4 @@ Gurobi is a state-of-the-art mathematical optimization solver, widely recognized
 
 ## BiGG Model
 
-*BiGG Models* is open source. *BiGG Models* is open source, so you can browse the code, submit issues, and contribute on GitHub. {cite:p}`norsigian2020bigg`
+Biochemical, Genetic, and Genomic knowledgebase: Repository of Systems Biology Models (BiGG Models) is an open-source, community-driven resource providing standardized, genome-scale metabolic network models {cite:p}`norsigian2020bigg`. It offers a comprehensive platform for researchers, students, and bioinformatics professionals to access high-quality reconstructions spanning a wide range of organisms. Currently, BiGG Models features 108 published models, as of version 1.6 updated in 2019. For more detailed model information, visit http://bigg.ucsd.edu/models.

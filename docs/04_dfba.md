@@ -12,30 +12,22 @@ kernelspec:
 
 # Dynamic FBA
 
-Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See [the Notebooks with MyST Markdown documentation](https://jupyterbook.org/file-types/myst-notebooks.html) for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.
+Dynamic flux balance analysis (dFBA) is a computational approach that extends traditional flux balance analysis to incorporate temporal dynamics into the study of metabolic networks. By allowing reaction fluxes to vary with time in response to changing environmental or cellular conditions, dFBA provides deeper insights into system behavior and regulatory mechanisms. This primer covers the theoretical foundations of dFBA, includes several practical examples, and introduces software tools designed to perform these calculations {cite:p}`gomez2014dfbalab`.
 
-## DFBALab
+Dynamic model predictions for anaerobic batch growth of wild-type *E. coli* and recombinant *S. cerevisiae* strain RWB218 mono-cultures on glucose/xylose media are shown in the following {cite:p}`hanly2011coculture`.
 
-The Dynamic Flux Balance Analysis laboratory (DFBAlab) is a MATLAB-based code that performs numerical integration of dynamic flux balance analysis (dFBA) systems. It provides efficient simulation of multi-culture of microbial species based on genome-scale metabolic network reconstructions for analysis, control and optimization of biochemical processes. As such, it generates dynamic predictions of substrate, biomass, and product concentrations for growth in batch or fed-batch cultures.
 
-dFBA provides a structured model of a biochemical process, where the reaction pathways within the microorganism change depending on the environmental conditions, which is effectively represented by changes in the functional dependency on the substrate concentrations. These predictions result from the solution of linear programs (LPs). Common challenges involve the LPs becoming infeasible or nonunique solution sets. DFBAlab addresses both difficulties using the LP feasibility problem and lexicographic optimization, respectively. {cite:p}`gomez2014dfbalab`
+```{figure} _static/fig4-1.png
+:height: 200px
+:name: figure-fba
 
-## Create a notebook with MyST Markdown
-
-MyST Markdown notebooks are defined by two things:
-
-1. YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-   See the YAML at the top of this page for example.
-2. The presence of `{code-cell}` directives, which will be executed with your book.
-
-That's all that is needed to get started!
-
-## Quickly add YAML metadata for MyST Notebooks
-
-If you have a markdown file and you'd like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:
-
+Comparison of DFBALab model predictions and experimental data ({cite:p}`mark2008exp`) for wild-type E. coli aerobically consuming a mixture of glucose and xylose.
 ```
-jupyter-book myst init path/to/markdownfile.md
-```
+
+## Environment Setup
+
+For performing comprehensive constraint-based metabolic network analyses, several specialized software tools are required. In this section, we will install and configure two key components: the COBRA Toolbox and Gurobi. The COBRA Toolbox is a MATLAB-based software suite specifically designed for the analysis of genome-scale biochemical networks, while Gurobi is a state-of-the-art optimization solver that provides a MATLAB interface for executing linear and mixed-integer linear programming tasks.
+
+The Constraint-Based Reconstruction and Analysis (COBRA) Toolbox is widely recognized for its robust framework, enabling quantitative predictions of cellular and multicellular biochemical networks under various constraints. It implements an extensive range of methodologies, from fundamental reconstruction and model generation techniques to advanced, unbiased approaches for model-driven analysis. By integrating the COBRA Toolbox into a MATLAB environment, researchers gain access to a versatile platform for modeling, analyzing, and predicting diverse metabolic phenotypes at the genome scale. {cite:p}`heirendt2019cobra`
+
+Gurobi is a state-of-the-art mathematical optimization solver, widely recognized for its exceptional performance and reliability in solving a broad spectrum of linear, integer, and mixed-integer linear programming problems. Its advanced algorithms, parallelized computations, and extensive parameter tuning options make it one of the most efficient and user-friendly optimization tools available. {cite:p}`gurobi` By providing a robust MATLAB interface, Gurobi seamlessly integrates with the COBRA Toolbox and other computational frameworks, thereby streamlining model-driven analysis and facilitating rapid, large-scale solution of complex optimization problems.
