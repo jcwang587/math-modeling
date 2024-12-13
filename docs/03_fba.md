@@ -12,7 +12,7 @@ Flux balance analysis (FBA) is a mathematical framework for analyzing the flow o
 
 
 ```{figure} _static/fig3-1.png
-:height: 250px
+:height: 200px
 :name: figure-fba
 
 The conceptual basis of constraint-based modeling.
