@@ -15,7 +15,7 @@ kernelspec:
 Flux balance analysis (FBA) is a mathematical framework for analyzing the flow of metabolites through a metabolic network. This primer introduces the theoretical foundations of FBA, presents several practical examples, and provides a software toolbox to facilitate the necessary calculations {cite:p}`orth2010flux`.
 
 
-```{figure} _static/fig2-1.png
+```{figure} _static/fig3-1.png
 :height: 200px
 :name: figure-fba
 

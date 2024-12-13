@@ -8,7 +8,15 @@ jupytext:
 
 # Version Source Control
 
-**Git** is a distributed version control system that tracks versions of files. It is often used to control source code by programmers collaboratively developing software. A version control system is essential for modern coding development. In this chapter, students will start a personal GitHub to store their code and set up a Git plugin in MATLAB.
+**Git** is a distributed version control system that tracks versions of files. It is often used to control source code by programmers collaboratively developing software. A version control system is essential for modern coding development. You can use Git source control in MATLAB to manage your files and collaborate with others. Using Git, you can track changes to your files and recall specific versions later. From the MATLAB Current Folder browser, you can clone an existing remote repository, add files to the local repository, commit changes, and push and pull changes to and from the remote repository.
+
+
+```{figure} _static/fig2-1.png
+:height: 200px
+:name: figure-fba
+
+The basic workflow for working with the remote repository.
+```
 
 ## Join Github
 
