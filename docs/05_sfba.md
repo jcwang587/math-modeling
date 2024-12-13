@@ -20,7 +20,7 @@ COMETS is a software platform for performing computer simulations of spatially s
 
 
 ```{figure} _static/fig5-1.jpg
-:height: 250px
+:height: 300px
 :name: figure-fba
 
 A Schematic Representation of the Key Steps of COMETS Simulations.
