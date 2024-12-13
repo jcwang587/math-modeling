@@ -12,35 +12,19 @@ kernelspec:
 
 # Spatiotemporal FBA
 
-Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See [the Notebooks with MyST Markdown documentation](https://jupyterbook.org/file-types/myst-notebooks.html) for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.
+The incorporation of genome-scale metabolic reconstructions within spatiotemporal models that account for both spatial and temporal variations in the environment is desirable to connect genes to metabolic phenotype and system function. For example, genome-scale metabolic reconstructions allow the effects of gene deletions and insertions in mutant strains to be directly investigated.
 
 ## An example cell
 
-With MyST Markdown, you can define code cells with a directive like so:
+COMETS is a software platform for performing computer simulations of spatially structured microbial communities. It is based on stoichiometric modeling of the genome-scale metabolic network of individual microbial species using dynamic flux balance analysis, and on a discrete approximation of diffusion. COMETS is built and maintained by the [Daniel Segre Lab](http://www.bu.edu/segrelab) at Boston University. {cite:p}`harcombe2014comets`
 
-```{code-cell}
-print(2 + 2)
+
+```{figure} _static/fig5-1.png
+:height: 300px
+:name: figure-fba
+
+A Schematic Representation of the Key Steps of COMETS Simulations.
 ```
-
-When your book is built, the contents of any `{code-cell}` blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.
-
-```{seealso}
-Jupyter Book uses [Jupytext](https://jupytext.readthedocs.io/en/latest/) to convert text-based files to notebooks, and can support [many other text-based notebook files](https://jupyterbook.org/file-types/jupytext.html).
-```
-
-## Create a notebook with MyST Markdown
-
-MyST Markdown notebooks are defined by two things:
-
-1. YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-   See the YAML at the top of this page for example.
-2. The presence of `{code-cell}` directives, which will be executed with your book.
-
-That's all that is needed to get started!
 
 ## Quickly add YAML metadata for MyST Notebooks
 
