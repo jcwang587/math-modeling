@@ -29,3 +29,16 @@ Gurobi is a state-of-the-art mathematical optimization solver, widely recognized
 ## BiGG Model
 
 Biochemical, Genetic, and Genomic knowledgebase: Repository of Systems Biology Models (BiGG Models) is an open-source, community-driven resource providing standardized, genome-scale metabolic network models {cite:p}`norsigian2020bigg`. It offers a comprehensive platform for researchers, students, and bioinformatics professionals to access high-quality reconstructions spanning a wide range of organisms. Currently, BiGG Models features 108 published models, as of version 1.6 updated in 2019. For more detailed model information, visit http://bigg.ucsd.edu/models.
+
+## FBA model construction
+
+The mass balance is defined in terms of the flux through each reaction and the stoichiometry of that reaction. This gives rise to a set of coupled ordinary differential equations. The differential equations can be represented using a matrix notation, where ‘**S**’ is the stoichiometric matrix and ‘**V**’ is the matrix of the fluxes. The goal of FBA is to identify the metabolic fluxes in the steady-state operation of the metabolic network. As there are more reactions (hence fluxes) than there are metabolites, the steady-state solution for the metabolic fluxes is underdetermined. Thus, additional constraints are needed to uniquely determine the steady-state flux distribution. {site:p}`kauffman2003fba`
+
+
+```{figure} _static/fig3-2.png
+:height: 200px
+:name: figure-fba
+
+Methodology for flux balance analysis.
+```
+
