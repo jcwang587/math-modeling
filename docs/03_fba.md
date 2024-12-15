@@ -32,18 +32,16 @@ Biochemical, Genetic, and Genomic knowledgebase: Repository of Systems Biology M
 
 ## FBA model construction
 
-The mass balance is defined in terms of the flux through each reaction and the stoichiometry of that reaction. This gives rise to a set of coupled ordinary differential equations. The differential equations can be represented using a matrix notation, where ‘**S**’ is the stoichiometric matrix and ‘**V**’ is the matrix of the fluxes. The goal of FBA is to identify the metabolic fluxes in the steady-state operation of the metabolic network. As there are more reactions (hence fluxes) than there are metabolites, the steady-state solution for the metabolic fluxes is underdetermined. Thus, additional constraints are needed to uniquely determine the steady-state flux distribution. {site:p}`kauffman2003fba`
+This is a very simple example for an FBA study, as shown in the Figure 5 (a), this is not a cell but it depicts a make-believe cell. we call the inside of the cell intracellular and outside cell as extracellular. The idea of picture figure (a) is that the cell consume something from the b1 side and b1 is the rate of consumption. Then it takes across the membrane that is called uptake, and once it is inside the cell that will called A . And then you see there is a series of reactions between these metabolites A B and C. And these reactions A to B and C to B are irreversible, and the one between A and C is reversible reaction.
 
-
+And then what it depicts is that the cell can take this metabolite B and secrete it. Okay, meaning you can take this and move it outside the cell, and it can do the same thing with C. Okay, those are called secretions. So this is called uptake, and these two things are called secretions. And so this is just kinetics, basically. Okay, so this is nothing but, well, it's even simpler, it's just like mass balances. So what you do in a real cell, okay, there's going to be several hundred of these things. And there's going to be, you know, maybe a hundred of these things. And inside here, there won't be three metabolites, there'll be about, I think in our model, there's about 4,000. 
 
 
 ```{figure} _static/fig3-2.jpg
 :height: 450px
 :name: figure-fba
 
-Methodology for flux balance analysis.
+Methodology for flux balance analysis.{site:p}`kauffman2003fba`
 ```
 
-This is a very simple example for an FBA study, as shown in the Figure 5 (a), this is not a cell but it depicts a make-believe cell. we call the inside of the cell intracellular and outside cell as extracellular. The idea of picture figure (a) is that the cell consume something from the b1 side and b1 is the rate of consumption. Then it takes across the membrane that is called uptake, and once it is inside the cell that will called A . And then you see there is a series of reactions between these metabolites A B and C. And these reactions A to B and C to B are irreversible, and the one between A and C is reversible reaction.
-
-And then what it depicts is that the cell can take this metabolite B and secrete it. Okay, meaning you can take this and move it outside the cell, and it can do the same thing with C. Okay, those are called secretions. So this is called uptake, and these two things are called secretions. And so this is just kinetics, basically. Okay, so this is nothing but, well, it's even simpler, it's just like mass balances. So what you do in a real cell, okay, there's going to be several hundred of these things. And there's going to be, you know, maybe a hundred of these things. And inside here, there won't be three metabolites, there'll be about, I think in our model, there's about 4,000. 
+The mass balance is defined in terms of the flux through each reaction and the stoichiometry of that reaction. This gives rise to a set of coupled ordinary differential equations. The differential equations can be represented using a matrix notation, where ‘**S**’ is the stoichiometric matrix and ‘**V**’ is the matrix of the fluxes. The goal of FBA is to identify the metabolic fluxes in the steady-state operation of the metabolic network. As there are more reactions (hence fluxes) than there are metabolites, the steady-state solution for the metabolic fluxes is underdetermined. Thus, additional constraints are needed to uniquely determine the steady-state flux distribution. 
