@@ -16,7 +16,7 @@ The incorporation of genome-scale metabolic reconstructions within spatiotempora
 
 ## An example cell
 
-COMETS is a software platform for performing computer simulations of spatially structured microbial communities. It is based on stoichiometric modeling of the genome-scale metabolic network of individual microbial species using dynamic flux balance analysis, and on a discrete approximation of diffusion. COMETS is built and maintained by the [Daniel Segre Lab](http://www.bu.edu/segrelab) at Boston University. {cite:p}`harcombe2014comets`
+COMETS is a software platform for performing computer simulations of spatially structured microbial communities. It is based on stoichiometric modeling of the genome-scale metabolic network of individual microbial species using dynamic flux balance analysis, and on a discrete approximation of diffusion. COMETS is built and maintained by the [Daniel Segre Lab](http://www.bu.edu/segrelab) at Boston University {cite:p}`harcombe2014comets`.
 
 
 ```{figure} _static/fig5-1.jpg
