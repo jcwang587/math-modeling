@@ -38,7 +38,7 @@ And then what it depicts is that the cell can take this metabolite B and secrete
 
 
 ```{figure} _static/fig3-2.jpg
-:height: 450px
+:height: 400px
 :name: figure-fba
 
 Methodology for flux balance analysis.{site:p}`kauffman2003fba`
