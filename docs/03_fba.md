@@ -41,7 +41,7 @@ And then what it depicts is that the cell can take this metabolite B and secrete
 :height: 400px
 :name: figure-fba
 
-Methodology for flux balance analysis{cite:p}`kauffman2003fba`.
+Methodology for flux balance analysis {cite:p}`kauffman2003fba`.
 ```
 
 The mass balance is defined in terms of the flux through each reaction and the stoichiometry of that reaction. This gives rise to a set of coupled ordinary differential equations. The differential equations can be represented using a matrix notation, where ‘**S**’ is the stoichiometric matrix and ‘**V**’ is the matrix of the fluxes. The goal of FBA is to identify the metabolic fluxes in the steady-state operation of the metabolic network. As there are more reactions (hence fluxes) than there are metabolites, the steady-state solution for the metabolic fluxes is underdetermined. Thus, additional constraints are needed to uniquely determine the steady-state flux distribution. 
