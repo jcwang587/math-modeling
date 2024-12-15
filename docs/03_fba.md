@@ -44,4 +44,4 @@ The mass balance is defined in terms of the flux through each reaction and the s
 Methodology for flux balance analysis.
 ```
 
-This is a very simple example for an FBA study, as shown in the Figure 5 (a), we will call the inside of the cell intracellular and outside cell as 
+This is a very simple example for an FBA study, as shown in the Figure 5 (a), we will call the inside of the cell intracellular and outside cell as extracellular. The idea of picture figure (a) is that the cell consume something from the b1 side and b1 is the rate of consumption. Then it takes across the membrane that is called uptake, and once it is inside the cell that will called A . And then you see there is a series of reactions between these metabolites A B and C. And these reactions A to B and C to B are irreversible, and the one between A and C is reversible reaction.
