@@ -44,3 +44,4 @@ The mass balance is defined in terms of the flux through each reaction and the s
 Methodology for flux balance analysis.
 ```
 
+This is a very simple example for an FBA study, as shown in the Figure 5 (a), we will call the inside of the cell intracellular and outside cell as 
