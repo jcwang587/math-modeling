@@ -38,7 +38,7 @@ The mass balance is defined in terms of the flux through each reaction and the s
 
 
 ```{figure} _static/fig3-2.jpg
-:height: 250px
+:height: 400px
 :name: figure-fba
 
 Methodology for flux balance analysis.
