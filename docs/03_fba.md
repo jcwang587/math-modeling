@@ -35,6 +35,8 @@ Biochemical, Genetic, and Genomic knowledgebase: Repository of Systems Biology M
 The mass balance is defined in terms of the flux through each reaction and the stoichiometry of that reaction. This gives rise to a set of coupled ordinary differential equations. The differential equations can be represented using a matrix notation, where ‘**S**’ is the stoichiometric matrix and ‘**V**’ is the matrix of the fluxes. The goal of FBA is to identify the metabolic fluxes in the steady-state operation of the metabolic network. As there are more reactions (hence fluxes) than there are metabolites, the steady-state solution for the metabolic fluxes is underdetermined. Thus, additional constraints are needed to uniquely determine the steady-state flux distribution. {site:p}`kauffman2003fba`
 
 
+
+
 ```{figure} _static/fig3-2.jpg
 :height: 250px
 :name: figure-fba
