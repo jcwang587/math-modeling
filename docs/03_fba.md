@@ -59,26 +59,24 @@ Geometrically, if we consider the feasible set of flux distributions as a region
 A general linear program looks like this:
 
 **Maximize (or minimize)** a linear objective function:
-$$
+```{math}
 c^{T}x
-$$
+```
 where $c$ is a vector of known coefficients and $x$ represents the fluxes we are trying to determine.
 
 **Subject to**:
 
 1. A set of linear constraints, which can include equalities or inequalities.  In FBA, the stoichiometric constraints are often equalities, for example:
 
-$$
+```{math}
 Sx=0
-$$
-
-
+```
 
 2. Bounds on the variables (fluxes):
 
-$$
+```{math}
 l \leq x \leq u
-$$
+```
 
 Solving such a system requires specialized linear programming software, such as Gurobi, which is commonly used for FBA problems. By posing the FBA problem as a linear program, we can employ powerful computational tools to find the flux distribution that optimizes the chosen objective, thereby providing insights into the cell’s metabolic strategies.
 
