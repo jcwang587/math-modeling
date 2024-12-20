@@ -12,7 +12,7 @@ jupytext:
 
 
 ```{figure} _static/fig2-1.png
-:height: 250px
+:height: 200px
 :name: figure-fba
 
 The basic workflow for working with the remote repository.
