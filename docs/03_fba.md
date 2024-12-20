@@ -42,7 +42,45 @@ Conceptually, this is essentially a set of kinetic or, more specifically, mass b
 Methodology for flux balance analysis {cite:p}`kauffman2003fba`.
 ```
 
-The mass balance is defined in terms of the flux through each reaction and the stoichiometry of that reaction. This gives rise to a set of coupled ordinary differential equations. The differential equations can be represented using a matrix notation, where ‘**S**’ is the stoichiometric matrix and ‘**V**’ is the matrix of the fluxes. The goal of FBA is to identify the metabolic fluxes in the steady-state operation of the metabolic network. As there are more reactions (hence fluxes) than there are metabolites, the steady-state solution for the metabolic fluxes is underdetermined. Thus, additional constraints are needed to uniquely determine the steady-state flux distribution. 
+This example provides only a simple illustration. A real model is typically much larger and more complex, but this basic scenario helps convey the general idea of how Flux Balance Analysis (FBA) works.
+
+Once we have set up the basic system, we can write mass balance equations for each metabolite. Consider metabolite A as an example. Its accumulation rate appears on the left-hand side, and on the right-hand side we include terms for all reactions that either produce or consume A. For instance, B1 produces A, so it has a positive sign. The reaction V1 consumes A, yielding a negative sign. The reactions involving A and C are reversible—V2 consumes A, while V3 produces A—hence both positive and negative terms appear. We can perform the same process for metabolites B and C as well.
+
+After writing these mass balances, we can assemble them into a stoichiometric matrix, often denoted by S. Here, the time derivatives of each metabolite concentration are equal to S multiplied by the vector of fluxes (reaction rates). The flux vector includes all the reaction rates—both uptake and secretion fluxes, as well as internal metabolic fluxes. Typically, the stoichiometric matrix and flux vector are known respectively as S and v, and the goal is to determine the flux distribution given known constraints.
+
+In a practical scenario, we specify the stoichiometric matrix for the organism of interest. Each organism has its own unique matrix, reflecting its metabolic network and available metabolites. We might specify the uptake flux (e.g., B1) and then attempt to solve for all unknown fluxes, including the internal fluxes and secretion fluxes.
+
+To simplify the problem, we often assume a steady-state condition, setting all time derivatives to zero. Additionally, we may eliminate certain reactions—for example, assuming V3 is zero, effectively making the A-to-C pathway one-way (irreversible). After applying these simplifications, we might end up with a system that has three equations but five unknowns. Because there are more unknowns than equations, the system is underdetermined and cannot be solved uniquely.
+
+To address this issue, we introduce an optimization objective. In FBA, a common objective is to assume that the cell optimizes its metabolic fluxes to maximize growth rate. In simpler conceptual models, we might choose a different arbitrary objective, but the principle remains the same: we impose an additional criterion to select a unique solution from the set of all feasible solutions.
+
+Geometrically, if we consider the feasible set of flux distributions as a region in flux space, the objective function defines contours of constant objective value. We then seek the point in the feasible region that yields the maximum value of the objective. The mathematical formulation, with a linear objective and linear constraints derived from the stoichiometric equations and flux bounds, takes the form of a linear programming (LP) problem.
+
+A general linear program looks like this:
+
+**Maximize (or minimize)** a linear objective function:
+\[
+c^T x
+\]
+
+where \( c \) is a vector of known coefficients and \( x \) represents the fluxes we are trying to determine.
+
+**Subject to**:
+
+1. A set of linear constraints, which can include equalities or inequalities.  
+   In FBA, the stoichiometric constraints are often equalities, for example:
+   \[
+   Sx = 0
+   \]
+
+2. Bounds on the variables (fluxes):
+   \[
+   l \leq x \leq u
+   \]
+
+Solving such a system requires specialized linear programming software, such as Gurobi, which is commonly used for FBA problems. By posing the FBA problem as a linear program, we can employ powerful computational tools to find the flux distribution that optimizes the chosen objective, thereby providing insights into the cell’s metabolic strategies.
+
+
 
 ## Genome-Scale Metabolic Model
 
