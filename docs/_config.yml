@@ -49,6 +49,8 @@ html:
 parse:
   myst_enable_extensions:
     - html_image
+    - amsmath
+    - dollarmath
 
 #######################################################################################
 # Define the style of the reference labels
