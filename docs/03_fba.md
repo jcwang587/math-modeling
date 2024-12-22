@@ -62,11 +62,11 @@ A general linear program looks like this:
 
 **Maximize (or minimize)** a linear objective function:
 
-```{math}
-:label: label_1
+$$
 c^{T}x
-```
-where $\mathcal{c}$ is a vector of known coefficients and $x$ represents the fluxes we are trying to determine.
+$$ (label_1)
+
+where $this_{is}^{inline}$ is a vector of known coefficients and x represents the fluxes we are trying to determine.
 
 **Subject to**:
 
