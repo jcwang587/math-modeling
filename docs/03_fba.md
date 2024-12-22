@@ -32,7 +32,7 @@ This is a very simple example for an FBA (Flux Balance Analysis) study. As shown
 
 Within the cell, there are several reactions involving metabolites A, B, and C. The reactions from A to B and from C to B are irreversible, while the reaction between A and C is reversible. Additionally, the cell can secrete metabolite B back into the extracellular environment, and similarly, it can secrete metabolite C. Thus, we have one uptake process and two secretion processes.
 
-Conceptually, this is essentially a set of kinetic or, more specifically, mass balance equations. In an actual cell, there would be hundreds of such exchanges and reactions, and instead of just three metabolites, a large-scale metabolic model might include thousands. For example, in the iMM904 metabolic reconstruction, there are approximately 4,000 metabolites.
+Conceptually, this is essentially a set of kinetic or, more specifically, mass balance equations. In an actual cell, there would be hundreds of such exchanges and reactions, and instead of just three metabolites, a large-scale metabolic model might include thousands. For example, in the iMM904 metabolic reconstruction, there are approximately 4,000 metabolites. This example provides only a simple illustration. A real model is typically much larger and more complex, but this basic scenario helps convey the general idea of how Flux Balance Analysis (FBA) works.
 
 
 ```{figure} _static/fig3-2.jpg
@@ -42,7 +42,9 @@ Conceptually, this is essentially a set of kinetic or, more specifically, mass b
 Methodology for flux balance analysis {cite:p}`kauffman2003fba`.
 ```
 
-This example provides only a simple illustration. A real model is typically much larger and more complex, but this basic scenario helps convey the general idea of how Flux Balance Analysis (FBA) works.
+Once we have set up the basic system, we can write mass-balance equations for each metabolite. Let us denote the concentrations of metabolites AAA, BBB, and CCC by [A][A][A], [B][B][B], and [C][C][C], respectively. Their time derivatives (accumulation rates) are given by sums of all reactions that either produce or consume these metabolites.
+
+
 
 Once we have set up the basic system, we can write mass balance equations for each metabolite. Consider metabolite A as an example. Its accumulation rate appears on the left-hand side, and on the right-hand side we include terms for all reactions that either produce or consume A. For instance, B1 produces A, so it has a positive sign. The reaction V1 consumes A, yielding a negative sign. The reactions involving A and C are reversible—V2 consumes A, while V3 produces A—hence both positive and negative terms appear. We can perform the same process for metabolites B and C as well.
 
@@ -64,7 +66,7 @@ A general linear program looks like this:
 :label: label_1
 c^{T}x
 ```
-where $c$ is a vector of known coefficients and $x$ represents the fluxes we are trying to determine.
+where $\mathcal{c}$ is a vector of known coefficients and $x$ represents the fluxes we are trying to determine.
 
 **Subject to**:
 
