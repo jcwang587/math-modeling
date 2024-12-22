@@ -59,7 +59,9 @@ Geometrically, if we consider the feasible set of flux distributions as a region
 A general linear program looks like this:
 
 **Maximize (or minimize)** a linear objective function:
+
 ```{math}
+:label: my_label
 c^{T}x
 ```
 where $c$ is a vector of known coefficients and $x$ represents the fluxes we are trying to determine.
