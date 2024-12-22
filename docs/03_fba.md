@@ -61,7 +61,7 @@ A general linear program looks like this:
 **Maximize (or minimize)** a linear objective function:
 
 ```{math}
-:label: my_label
+:label: label_1
 c^{T}x
 ```
 where $c$ is a vector of known coefficients and $x$ represents the fluxes we are trying to determine.
@@ -71,12 +71,14 @@ where $c$ is a vector of known coefficients and $x$ represents the fluxes we are
 1. A set of linear constraints, which can include equalities or inequalities.  In FBA, the stoichiometric constraints are often equalities, for example:
 
 ```{math}
+:label: label_2
 Sx=0
 ```
 
 2. Bounds on the variables (fluxes):
 
 ```{math}
+:label: label_3
 l \leq x \leq u
 ```
 
