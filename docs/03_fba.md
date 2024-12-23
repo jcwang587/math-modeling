@@ -37,7 +37,7 @@ Conceptually, this is essentially a set of kinetic or, more specifically, mass b
 ```{figure} _static/fig3-2.jpg
 ---
 height: 400px
-name: figure-fba
+name: figure_fba
 ---
 Methodology for flux balance analysis {cite:p}`kauffman2003fba`.
 ```
