@@ -28,7 +28,7 @@ Gurobi is a state-of-the-art mathematical optimization solver, widely recognized
 
 ## FBA model construction
 
-This is a very simple example for an FBA (Flux Balance Analysis) study. As shown in the following figure, this is not an actual cell, but rather a hypothetical one used for illustrative purposes. We refer to the interior of the cell as the intracellular space, and the environment outside the cell as the extracellular space. In this simplified scenario, the cell consumes a substrate from the side labeled “b1,” where “b1” represents the rate of consumption. Once this substrate crosses the membrane—an action referred to as “uptake”—it is designated as metabolite A inside the cell.
+Here, we present a very simple example of a Flux Balance Analysis (FBA) study. As shown in the {numref}`figure_fba`, this is not an actual cell, but rather a hypothetical one used for illustrative purposes. We refer to the interior of the cell as the "intracellular", and the environment outside the cell as the "extracellular". In this simplified scenario, the cell consumes a substrate from the side labeled “b1,” where “b1” represents the rate of consumption. Once this substrate crosses the membrane—an action referred to as “uptake”—it is designated as metabolite A inside the cell.
 
 Within the cell, there are several reactions involving metabolites A, B, and C. The reactions from A to B and from C to B are irreversible, while the reaction between A and C is reversible. Additionally, the cell can secrete metabolite B back into the extracellular environment, and similarly, it can secrete metabolite C. Thus, we have one uptake process and two secretion processes.
 
@@ -62,7 +62,7 @@ We can perform the same process for metabolites B and C as well. After writing t
 - $x$ be the vector of metabolite concentrations,
 - $v$ be the vector of reaction fluxes (or reaction rates).
 
-Then the mass balances for all metabolites can be written in compact form as {eq}`label_2`, as also depicted in {numref}`figure_fba`(b).
+Then the mass balances for all metabolites can be written in compact form as {eq}`label_2`, as also depicted in the right part of  {numref}`figure_fba`(b).
 
 ```{math}
 :label: label_2
