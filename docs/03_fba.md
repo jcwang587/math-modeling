@@ -60,12 +60,10 @@ We can perform the same process for metabolites B and C as well. After writing t
 
 ```{math}
 :label: label_2
-\frac{dx}{dt} = Sv
+\frac{dX}{dt} = Sv
 ```
 
-Here, the time derivatives of each metabolite concentration are equal to S multiplied by the vector of fluxes (reaction rates). The flux vector includes all the reaction rates—both uptake and secretion fluxes, as well as internal metabolic fluxes. Typically, the stoichiometric matrix and flux vector are known respectively as S and v, and the goal is to determine the flux distribution given known constraints.
-
-In a practical scenario, we specify the stoichiometric matrix for the organism of interest. Each organism has its own unique matrix, reflecting its metabolic network and available metabolites. We might specify the uptake flux (e.g., B1) and then attempt to solve for all unknown fluxes, including the internal fluxes and secretion fluxes.
+Typically, the stoichiometric matrix and flux vector are denoated as $S$ and $v$, respectively, with the goal of determining the flux distribution under known constraints. The flux vector includes all reaction rates, including uptake and secretion fluxes as well as internal metabolic fluxes. In a practical scenario, we specify the stoichiometric matrix for the organism of interest. Each organism has its own unique matrix, reflecting its metabolic network and available metabolites. We might specify the uptake flux (e.g., $b_{1}$) and then attempt to solve for all unknown fluxes, including the internal fluxes and secretion fluxes.
 
 To simplify the problem, we often assume a steady-state condition, setting all time derivatives to zero. Additionally, we may eliminate certain reactions—for example, assuming V3 is zero, effectively making the A-to-C pathway one-way (irreversible). After applying these simplifications, we might end up with a system that has three equations but five unknowns. Because there are more unknowns than equations, the system is underdetermined and cannot be solved uniquely.
 
