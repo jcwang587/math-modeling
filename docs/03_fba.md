@@ -35,8 +35,10 @@ Within the cell, there are several reactions involving metabolites A, B, and C. 
 Conceptually, this is essentially a set of kinetic or, more specifically, mass balance equations. In an actual cell, there would be hundreds of such exchanges and reactions, and instead of just three metabolites, a large-scale metabolic model might include thousands. For example, in the iMM904 metabolic reconstruction, there are approximately 4,000 metabolites. This example provides only a simple illustration. A real model is typically much larger and more complex, but this basic scenario helps convey the general idea of how Flux Balance Analysis (FBA) works.
 
 ```{figure} _static/fig3-2.jpg
-:height: 400px
-:name: figure-fba
+---
+height: 400px
+name: figure-fba
+---
 Methodology for flux balance analysis {cite:p}`kauffman2003fba`.
 ```
 
