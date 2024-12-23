@@ -47,14 +47,29 @@ Once we have set up the basic system, we can write mass-balance equations for ea
 As an example, consider the balance for metabolite $A$. Its net rate of change is given by
 
 ```{math}
+:label: label_1
 \frac{d[A]}{dt} = v_{B1} - v_{V1} - v_{V2} + v_{V3}
 ```
 
+Here:
 
+- $v_{B1}$ represents a reaction (or flux) producing $A$, hence the positive sign.
+- $v_{V1}$ is a reaction consuming $A$, hence the negative sign.
+- $v_{V2}$ consumes $A$, and $v_{V3}$ produces $A$. These reactions are reversible, so both positive and negative terms appear depending on their direction.
 
-Once we have set up the basic system, we can write mass balance equations for each metabolite. Consider metabolite A as an example. Its accumulation rate appears on the left-hand side, and on the right-hand side we include terms for all reactions that either produce or consume A. For instance, B1 produces A, so it has a positive sign. The reaction V1 consumes A, yielding a negative sign. The reactions involving A and C are reversible—V2 consumes A, while V3 produces A—hence both positive and negative terms appear. We can perform the same process for metabolites B and C as well.
+We can perform the same process for metabolites B and C as well. After writing these mass-balance equations, we can assemble them into a stoichiometric matrix, often denoted by $S$. Let:
 
-After writing these mass balances, we can assemble them into a stoichiometric matrix, often denoted by S. Here, the time derivatives of each metabolite concentration are equal to S multiplied by the vector of fluxes (reaction rates). The flux vector includes all the reaction rates—both uptake and secretion fluxes, as well as internal metabolic fluxes. Typically, the stoichiometric matrix and flux vector are known respectively as S and v, and the goal is to determine the flux distribution given known constraints.
+- $x$ be the vector of metabolite concentrations,
+- $v$ be the vector of reaction fluxes (or reaction rates).
+
+Then the mass balances for all metabolites can be written in compact form as {eq}`label_1`, which was also depicted in {numref}`figure_fba` (b).
+
+```{math}
+:label: label_2
+\frac{dx}{dt} = Sv
+```
+
+Here, the time derivatives of each metabolite concentration are equal to S multiplied by the vector of fluxes (reaction rates). The flux vector includes all the reaction rates—both uptake and secretion fluxes, as well as internal metabolic fluxes. Typically, the stoichiometric matrix and flux vector are known respectively as S and v, and the goal is to determine the flux distribution given known constraints.
 
 In a practical scenario, we specify the stoichiometric matrix for the organism of interest. Each organism has its own unique matrix, reflecting its metabolic network and available metabolites. We might specify the uptake flux (e.g., B1) and then attempt to solve for all unknown fluxes, including the internal fluxes and secretion fluxes.
 
@@ -69,7 +84,7 @@ A general linear program looks like this:
 **Maximize (or minimize)** a linear objective function:
 
 ```{math}
-:label: label_1
+:label: label_3
 c^{T}x
 ```
 where $\mathcal{c}$ is a vector of known coefficients and $x$ represents the fluxes we are trying to determine.
@@ -79,14 +94,14 @@ where $\mathcal{c}$ is a vector of known coefficients and $x$ represents the flu
 1. A set of linear constraints, which can include equalities or inequalities.  In FBA, the stoichiometric constraints are often equalities, for example:
 
 ```{math}
-:label: label_2
+:label: label_4
 Sx=0
 ```
 
 2. Bounds on the variables (fluxes):
 
 ```{math}
-:label: label_3
+:label: label_5
 l \leq x \leq u
 ```
 
