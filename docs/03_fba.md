@@ -46,7 +46,7 @@ Once we have set up the basic system, we can write mass-balance equations for ea
 
 As an example, consider the balance for metabolite $A$. Its net rate of change is given by
 
-```
+```{math}
 \frac{d[A]}{dt} = v_{B1} - v_{V1} - v_{V2} + v_{V3}
 ```
 
