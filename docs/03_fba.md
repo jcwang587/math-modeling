@@ -60,7 +60,7 @@ We can perform the same process for metabolites B and C as well. After writing t
 - $x$ be the vector of metabolite concentrations,
 - $v$ be the vector of reaction fluxes (or reaction rates).
 
-Then the mass balances for all metabolites can be written in compact form as {eq}`label_1`, which was also depicted in {numref}`figure_fba`(b).
+Then the mass balances for all metabolites can be written in compact form as {eq}`label_2`, as also depicted in {numref}`figure_fba`(b).
 
 ```{math}
 :label: label_2
