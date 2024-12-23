@@ -42,7 +42,13 @@ Conceptually, this is essentially a set of kinetic or, more specifically, mass b
 Methodology for flux balance analysis {cite:p}`kauffman2003fba`.
 ```
 
-Once we have set up the basic system, we can write mass-balance equations for each metabolite. Let us denote the concentrations of metabolites AAA, BBB, and CCC by [A][A][A], [B][B][B], and [C][C][C], respectively. Their time derivatives (accumulation rates) are given by sums of all reactions that either produce or consume these metabolites.
+Once we have set up the basic system, we can write mass-balance equations for each metabolite. Let us denote the concentrations of metabolites $A$, $B$, and $C$ by $[A]$, $[B]$, and $[C]$, respectively. Their time derivatives (accumulation rates) are given by sums of all reactions that either produce or consume these metabolites.
+
+As an example, consider the balance for metabolite $A$. Its net rate of change is given by
+
+```
+\frac{d[A]}{dt} = v_{B1} - v_{V1} - v_{V2} + v_{V3}
+```
 
 
 
