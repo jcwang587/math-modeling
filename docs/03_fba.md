@@ -97,7 +97,7 @@ Sx=0
 l \leq x \leq u
 ```
 
-Solving such a system requires specialized linear programming software, such as Gurobi, which is commonly used for FBA problems. By posing the FBA problem as a linear program, we can employ powerful computational tools to find the flux distribution that optimizes the chosen objective, thereby providing insights into the cell’s metabolic strategies.
+Solving such a system requires specialized linear programming software, such as Gurobi, which is commonly used for FBA problems. By posing the FBA problem as a linear program, we can find the flux distribution that optimizes the chosen objective, thereby providing insights into the cell’s metabolic strategies.
 
 
 
