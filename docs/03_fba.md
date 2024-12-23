@@ -28,15 +28,17 @@ Gurobi is a state-of-the-art mathematical optimization solver, widely recognized
 
 ## FBA model construction
 
-This is a very simple example for an FBA (Flux Balance Analysis) study. As shown in the following figure, this is not an actual cell, but rather a hypothetical one used for illustrative purposes. We refer to the interior of the cell as the intracellular space, and the environment outside the cell as the extracellular space. In this simplified scenario, the cell consumes a substrate from the side labeled “b1,” where “b1” represents the rate of consumption. Once this substrate crosses the membrane—an action referred to as “uptake”—it is designated as metabolite A inside the cell.
+Here, we present a very simple example of a Flux Balance Analysis (FBA) study. As shown in the {numref}`figure_fba`, this is not an actual cell, but rather a hypothetical one used for illustrative purposes. We refer to the interior of the cell as the "intracellular", and the environment outside the cell as the "extracellular". In this simplified scenario, the cell consumes a substrate from the side labeled $b_{1}$, where $b_{1}$ represents the rate of consumption. Once this substrate crosses the membrane, an action known as "uptake," it is referred to as metabolite $A$ within the cell.
 
-Within the cell, there are several reactions involving metabolites A, B, and C. The reactions from A to B and from C to B are irreversible, while the reaction between A and C is reversible. Additionally, the cell can secrete metabolite B back into the extracellular environment, and similarly, it can secrete metabolite C. Thus, we have one uptake process and two secretion processes.
+Within the cell, there are several reactions involving metabolites $A$, $B$, and $C$. The reactions from $A$ to $B$ and from $C$ to $B$ are irreversible, while the reaction between $A$ and $C$ is reversible. Additionally, the cell can secrete metabolite $B$ back into the extracellular environment, and similarly, it can secrete metabolite $C$. Thus, we have one uptake process and two secretion processes.
 
-Conceptually, this is essentially a set of kinetic or, more specifically, mass balance equations. In an actual cell, there would be hundreds of such exchanges and reactions, and instead of just three metabolites, a large-scale metabolic model might include thousands. For example, in the iMM904 metabolic reconstruction, there are approximately 4,000 metabolites. This example provides only a simple illustration. A real model is typically much larger and more complex, but this basic scenario helps convey the general idea of how Flux Balance Analysis (FBA) works.
+Conceptually, this is essentially a set of kinetic or, more specifically, mass balance equations. In an actual cell, there would be hundreds of such exchanges and reactions, and instead of just three metabolites, a large-scale metabolic model might include thousands. For example, in the iMM904 metabolic reconstruction, there are approximately 4,000 metabolites. A real model is typically much larger and more complex, but this basic scenario helps convey the general idea of how FBA works.
 
 ```{figure} _static/fig3-2.jpg
-:height: 400px
-:name: figure-fba
+---
+height: 400px
+name: figure_fba
+---
 Methodology for flux balance analysis {cite:p}`kauffman2003fba`.
 ```
 
@@ -46,34 +48,26 @@ As an example, consider the balance for metabolite $A$. Its net rate of change i
 
 ```{math}
 :label: label_1
-\frac{d[A]}{dt} = v_{B1} - v_{V1} - v_{V2} + v_{V3}
+\frac{d[A]}{dt} = - v_{1} - v_{2} + v_{3} + b_{1}
 ```
 
 Here:
 
-- $v_{B1}$ represents a reaction (or flux) producing $A$, hence the positive sign.
-- $v_{V1}$ is a reaction consuming $A$, hence the negative sign.
-- $v_{V2}$ consumes $A$, and $v_{V3}$ produces $A$. These reactions are reversible, so both positive and negative terms appear depending on their direction.
+- $b_{1}$ and $v_{3}$ represent the reactions producing $A$, hence the positive sign.
+- $v_{1}$ and $v_{2}$ are two reactions consuming $A$, hence the negative sign.
 
-We can perform the same process for metabolites B and C as well. After writing these mass-balance equations, we can assemble them into a stoichiometric matrix, often denoted by $S$. Let:
-
-- $x$ be the vector of metabolite concentrations,
-- $v$ be the vector of reaction fluxes (or reaction rates).
-
-Then the mass balances for all metabolites can be written in compact form as {eq}`label_2`, as also depicted in {numref}`figure_fba`(b).
+We can perform the same process for metabolites B and C as well. After writing these mass-balance equations, we can assemble them into a stoichiometric matrix, often denoted by $S$. Then the mass balances for all metabolites can be written in compact form as {eq}`label_2`, as also depicted in the right part of  {numref}`figure_fba`(b).
 
 ```{math}
 :label: label_2
-\frac{dx}{dt} = Sv
+\frac{dX}{dt} = Sv
 ```
 
-Here, the time derivatives of each metabolite concentration are equal to S multiplied by the vector of fluxes (reaction rates). The flux vector includes all the reaction rates—both uptake and secretion fluxes, as well as internal metabolic fluxes. Typically, the stoichiometric matrix and flux vector are known respectively as S and v, and the goal is to determine the flux distribution given known constraints.
+Typically, the stoichiometric matrix and flux vector are denoated as $S$ and $v$, respectively, with the goal of determining the flux distribution under known constraints. The flux vector includes all reaction rates, including uptake and secretion fluxes as well as internal metabolic fluxes. In a practical scenario, we specify the stoichiometric matrix for the organism of interest. Each organism has its own unique matrix, reflecting its metabolic network and available metabolites. We might specify the uptake flux (e.g., $b_{1}$) and then attempt to solve for all unknown fluxes, including the internal fluxes and secretion fluxes.
 
-In a practical scenario, we specify the stoichiometric matrix for the organism of interest. Each organism has its own unique matrix, reflecting its metabolic network and available metabolites. We might specify the uptake flux (e.g., B1) and then attempt to solve for all unknown fluxes, including the internal fluxes and secretion fluxes.
+To simplify the problem, we often assume a steady-state condition, setting all time derivatives to zero. Additionally, certain reactions may be excluded from consideration; for example, assuming $V_{3}=0$, effectively making the A-to-C pathway one-way (irreversible). After applying these simplifications, we might end up with a system that has three equations but five unknowns. Because there are more unknowns than equations, the system is underdetermined and cannot be solved uniquely.
 
-To simplify the problem, we often assume a steady-state condition, setting all time derivatives to zero. Additionally, we may eliminate certain reactions—for example, assuming V3 is zero, effectively making the A-to-C pathway one-way (irreversible). After applying these simplifications, we might end up with a system that has three equations but five unknowns. Because there are more unknowns than equations, the system is underdetermined and cannot be solved uniquely.
-
-To address this issue, we introduce an optimization objective. In FBA, a common objective is to assume that the cell optimizes its metabolic fluxes to maximize growth rate. In simpler conceptual models, we might choose a different arbitrary objective, but the principle remains the same: we impose an additional criterion to select a unique solution from the set of all feasible solutions.
+To address this issue, we introduce an optimization objective. In FBA, a common objective is to assume that the cell optimizes its metabolic fluxes to maximize growth rate. In simpler conceptual models, we might choose a different arbitrary objective, but the principle remains the same: we impose an additional criterion to select a unique solution from the set of all feasible solutions, as demonstrated by {numref}`figure_fba`(c-d).
 
 Geometrically, if we consider the feasible set of flux distributions as a region in flux space, the objective function defines contours of constant objective value. We then seek the point in the feasible region that yields the maximum value of the objective. The mathematical formulation, with a linear objective and linear constraints derived from the stoichiometric equations and flux bounds, takes the form of a linear programming (LP) problem.
 
@@ -103,7 +97,7 @@ Sx=0
 l \leq x \leq u
 ```
 
-Solving such a system requires specialized linear programming software, such as Gurobi, which is commonly used for FBA problems. By posing the FBA problem as a linear program, we can employ powerful computational tools to find the flux distribution that optimizes the chosen objective, thereby providing insights into the cell’s metabolic strategies.
+Solving such a system requires specialized linear programming software, such as Gurobi, which is commonly used for FBA problems. By posing the FBA problem as a linear program, we can find the flux distribution that optimizes the chosen objective, thereby providing insights into the cell’s metabolic strategies.
 
 
 
