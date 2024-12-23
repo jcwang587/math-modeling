@@ -48,21 +48,15 @@ As an example, consider the balance for metabolite $A$. Its net rate of change i
 
 ```{math}
 :label: label_1
-\frac{d[A]}{dt} = v_{B1} - v_{V1} - v_{V2} + v_{V3}
+\frac{d[A]}{dt} = - v_{1} - v_{2} + v_{3} + b_{1}
 ```
 
 Here:
 
-- $v_{B1}$ represents a reaction (or flux) producing $A$, hence the positive sign.
-- $v_{V1}$ is a reaction consuming $A$, hence the negative sign.
-- $v_{V2}$ consumes $A$, and $v_{V3}$ produces $A$. These reactions are reversible, so both positive and negative terms appear depending on their direction.
+- $b_{1}$ and $v_{3}$ represent the reactions producing $A$, hence the positive sign.
+- $v_{1}$ and $v_{2}$ are two reactions consuming $A$, hence the negative sign.
 
-We can perform the same process for metabolites B and C as well. After writing these mass-balance equations, we can assemble them into a stoichiometric matrix, often denoted by $S$. Let:
-
-- $x$ be the vector of metabolite concentrations,
-- $v$ be the vector of reaction fluxes (or reaction rates).
-
-Then the mass balances for all metabolites can be written in compact form as {eq}`label_2`, as also depicted in the right part of  {numref}`figure_fba`(b).
+We can perform the same process for metabolites B and C as well. After writing these mass-balance equations, we can assemble them into a stoichiometric matrix, often denoted by $S$. Then the mass balances for all metabolites can be written in compact form as {eq}`label_2`, as also depicted in the right part of  {numref}`figure_fba`(b).
 
 ```{math}
 :label: label_2
