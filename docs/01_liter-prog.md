@@ -20,7 +20,7 @@ This section describes how to bring interactivity to your book. This lets users 
 
 - **Example 1: Simple Narrative with a Single Code Cell**
 
-In literate programming, we mix text and code to explain what is happening in a computation as we develop it. Here is a simple Python code cell that calculates the factorial of 5:
+In literate programming, we combine explanatory text and source code to clarify the details of a computation as it is being developed. Jupyter Book, the tool used to create this book, can be viewed as a type of literate programming environment. We can store and execute the code in this chapter directly on this webpage. Here is a simple Python code cell that calculates the factorial of 5:
 
 ```{code-cell} python
 def factorial(n):
