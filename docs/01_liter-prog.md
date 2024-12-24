@@ -29,7 +29,7 @@ def factorial(n):
 factorial(5)
 ```
 
-- **Example 2: Creating a Plot **
+- **Example 2: Creating a Plot**
 
 In this example, we introduce a dataset and then compute basic statistical measures (mean and standard deviation). We'll start by generating some random data:
 
