@@ -39,12 +39,10 @@ import numpy as np
 
 data = np.random.normal(loc=0, scale=1, size=1000)
 
-plt.figure(figsize=(8, 5))
-plt.hist(data, bins=30, alpha=0.7, edgecolor='black')
+plt.hist(data, bins=30)
 plt.title('Histogram of Normally Distributed Data')
 plt.xlabel('Value')
 plt.ylabel('Frequency')
-plt.grid(axis='y', alpha=0.75)
 plt.show()
 ```
 
