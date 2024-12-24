@@ -20,7 +20,7 @@ This section uses Python coding as an example to demonstrate how to incorporate 
 
 - **Example 1: Single Code Cell**
 
-In literate programming, we combine explanatory text and source code to clarify the details of a computation as it is being developed. Jupyter Book, the tool used to create this book, can be viewed as a type of literate programming environment. We can store and execute the code in this chapter directly on this webpage. Here is a simple Python code cell that calculates the factorial of 5:
+In literate programming, we combine explanatory text and source code to clarify the details of a computation as it is being developed. Jupyter Book, the tool used to create this book, can be viewed as a type of literate programming environment. We can store and execute the code in this chapter directly on this webpage. Here is a simple Python code cell that calculates the factorial of 5.
 
 ```{code-cell} python
 def factorial(n):
@@ -31,7 +31,7 @@ factorial(5)
 
 - **Example 2: Creating a Plot**
 
-In this example, we introduce a dataset and then compute basic statistical measures (mean and standard deviation). We'll start by generating some random data:
+In this example, we introduce a dataset and demonstrate how to visualize it using a histogram. You can also try adjusting various parameters, such as the number of bins or the dataset size, to explore how they affect the plot.
 
 ```{code-cell} python
 import matplotlib.pyplot as plt
@@ -46,7 +46,7 @@ plt.ylabel('Frequency')
 plt.show()
 ```
 
-As you can see, we have defined named cells (`stats-data-gen`, `stats-computation`) and can refer to them in our text. This allows us to build a cohesive narrative around the code, mentioning where data is generated and where it is used.
+As you can see, this example demonstrates how Python code can be combined with descriptive text in a literate programming environment. This allows users to modify parameters and instantly observe their effects on the plot, making this approach ideal for interactive and exploratory data analysis.
 
 ## MATLAB Live Editor
 
