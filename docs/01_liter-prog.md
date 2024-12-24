@@ -18,7 +18,7 @@ kernelspec:
 This section describes how to bring interactivity to your book. This lets users run code and see outputs without leaving the page. Interactivity is provided by a kernel running on the public [**MyBinder**](https://mybinder.org) service. For an example, click the {fa}`rocket` --> {guilabel}`Live Code` button above on this page, and run the code below.
 ```
 
-- **Example 1: Simple Narrative with a Single Code Cell**
+- **Example 1: Single Code Cell**
 
 In literate programming, we combine explanatory text and source code to clarify the details of a computation as it is being developed. Jupyter Book, the tool used to create this book, can be viewed as a type of literate programming environment. We can store and execute the code in this chapter directly on this webpage. Here is a simple Python code cell that calculates the factorial of 5:
 
@@ -29,15 +29,23 @@ def factorial(n):
 factorial(5)
 ```
 
-- **Example 2: Using Directive Options and Cross-Referencing**
+- **Example 2: Creating a Plot **
 
 In this example, we introduce a dataset and then compute basic statistical measures (mean and standard deviation). We'll start by generating some random data:
 
 ```{code-cell} python
+import matplotlib.pyplot as plt
 import numpy as np
 
 data = np.random.normal(loc=0, scale=1, size=1000)
-data[:10]
+
+plt.figure(figsize=(8, 5))
+plt.hist(data, bins=30, alpha=0.7, edgecolor='black')
+plt.title('Histogram of Normally Distributed Data')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.grid(axis='y', alpha=0.75)
+plt.show()
 ```
 
 As you can see, we have defined named cells (`stats-data-gen`, `stats-computation`) and can refer to them in our text. This allows us to build a cohesive narrative around the code, mentioning where data is generated and where it is used.
