@@ -19,7 +19,7 @@ Dynamic model predictions for anaerobic batch growth of wild-type *E. coli* and 
 
 ```{figure} _static/fig4-1.png
 :height: 300px
-:name: figure-fba
+:name: figure-dfba
 
 Comparison of DFBALab model predictions and experimental data {cite:p}`mark2008exp` for wild-type *E. coli* aerobically consuming a mixture of glucose and xylose.
 ```
@@ -32,21 +32,15 @@ The Constraint-Based Reconstruction and Analysis (COBRA) Toolbox is widely recog
 
 Gurobi is a state-of-the-art mathematical optimization solver, widely recognized for its exceptional performance and reliability in solving a broad spectrum of linear, integer, and mixed-integer linear programming problems. Its advanced algorithms, parallelized computations, and extensive parameter tuning options make it one of the most efficient and user-friendly optimization tools available. {cite:p}`gurobi` By providing a robust MATLAB interface, Gurobi seamlessly integrates with the COBRA Toolbox and other computational frameworks, thereby streamlining model-driven analysis and facilitating rapid, large-scale solution of complex optimization problems.
 
-## CSTR
+## A CSTR Model for Microbial Growth
 
-
+In a continuous stirred-tank reactor (CSTR) designed for a yeast microbial fermentation, as shown in {numref}`figure_cstr`, four extracellular components are typically tracked: biomass, glucose, oxygen, and ethanol. The reactor is operated at a constant volume with a continuous feed of nutrients (media) that supports cell growth. Below is a concise overview of the main material balances, highlighting how each component is added, consumed, or removed from the system.
 
 
 ```{figure} _static/fig4-2.svg
 :height: 300px
-:name: figure-fba
+:name: figure-cstr
 
 Comparison of DFBALab model predictions and experimental data for wild-type *E. coli* aerobically consuming a mixture of glucose and xylose.
 ```
-
-
-
-
-
-
 
