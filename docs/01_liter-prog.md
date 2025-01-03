@@ -56,7 +56,7 @@ The figure below shows an example of the MATLAB Live Editor in action. The left-
 
 ```{figure} _static/fig1-1.png
 :height: 400px
-:name: figure-example
+:name: figure_example
 
 The screenshot for the MATLAB Live Editor.
 ```

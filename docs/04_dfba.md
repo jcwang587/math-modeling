@@ -19,7 +19,7 @@ Dynamic model predictions for anaerobic batch growth of wild-type *E. coli* and 
 
 ```{figure} _static/fig4-1.png
 :height: 300px
-:name: figure-dfba
+:name: figure_dfba
 
 Comparison of DFBALab model predictions and experimental data {cite:p}`mark2008exp` for wild-type *E. coli* aerobically consuming a mixture of glucose and xylose.
 ```
@@ -39,7 +39,7 @@ In a continuous stirred-tank reactor (CSTR) designed for a yeast microbial ferme
 
 ```{figure} _static/fig4-2.svg
 :height: 300px
-:name: figure-cstr
+:name: figure_cstr
 
 Comparison of DFBALab model predictions and experimental data for wild-type *E. coli* aerobically consuming a mixture of glucose and xylose.
 ```
