@@ -8,7 +8,7 @@ jupytext:
 
 # Preface
 
-Mathematical modeling lies at the heart of modern engineering education, serving as a foundational tool for understanding and solving complex engineering problems. In a standard undergraduate math modeling course, lectures typically introduce theoretical concepts and analytical techniques using pen-and-paper methods, while laboratory sessions focus on applying these theories through computational exercises—often using MATLAB or Python. Despite this balanced approach, a common student concern has been the limited exposure to cutting-edge computational tools that extend beyond traditional environments.
+Mathematical modeling lies at the heart of modern engineering education, serving as a foundational tool for understanding and solving complex engineering problems. In a standard undergraduate math modeling course, lectures typically introduce theoretical concepts and analytical techniques using pen-and-paper methods, while laboratory sessions focus on applying these theories through computational exercises, often utilizing MATLAB or Python. Despite this balanced approach, a common student concern has been the limited exposure to cutting-edge computational tools that extend beyond traditional environments.
 
 In alignment with the mission of CACHE (Computer Aids for Chemical Engineering), which focuses on bridging the gap between theory and practice through the integration of advanced computational tools and simulations, this supplementary course is designed to enhance students’ computational skill sets. It builds upon core concepts from thermodynamics, transport phenomena, kinetics, and differential equations, and moves toward practical, hands-on experiences with state-of-the-art modeling frameworks and optimization solvers.
 
