@@ -44,3 +44,12 @@ In a continuous stirred-tank reactor (CSTR) designed for a yeast microbial ferme
 Comparison of DFBALab model predictions and experimental data for wild-type *E. coli* aerobically consuming a mixture of glucose and xylose.
 ```
 
+### 1. Biomass Balance
+
+Governing Equation:
+
+where:
+
+- $X$ is the biomass concentration [g/L].
+- $D$ is the dilution rate [h^{-1}], defined as the volumetric feed flow rate divided by the reactor volume.
+- 
