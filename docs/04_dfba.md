@@ -106,10 +106,10 @@ Oxygen transfer in a CSTR is more complex, as oxygen is often supplied via sparg
 
 where:
 
-- OOO is the dissolved oxygen concentration in the liquid phase.
-- OfO_fOf is the feed concentration of dissolved oxygen (which may be zero if the feed is not pre-saturated).
-- kLak_L akLa is the volumetric mass transfer coefficient, and (Ogas−O)\bigl(O_{\text{gas}} - O\bigr)(Ogas−O) represents the driving force for oxygen transfer from the gas phase into the liquid.
-- vOv_OvO is the specific consumption rate of oxygen by the cells.
+- $O$ is the dissolved oxygen concentration in the liquid phase.
+- $O_{f}$ is the feed concentration of dissolved oxygen (which may be zero if the feed is not pre-saturated).
+- $k_{L}a$ is the volumetric mass transfer coefficient, and $(O_{gas} - O)$ represents the driving force for oxygen transfer from the gas phase into the liquid.
+- $v_O$ is the specific consumption rate of oxygen by the cells.
 
 In practice, the oxygen concentration depends on both the rate of cellular consumption and the efficiency of mass transfer. Thus, for highly active cultures, oxygen can become rate-limiting if it is not supplied at a sufficiently high transfer rate.
 
