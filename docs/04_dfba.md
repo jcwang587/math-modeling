@@ -76,17 +76,22 @@ where:
 
 - $G$ is the glucose concentration in the reactor $[mM or g/L]$.
 - $G_{f}$ is the feed (inlet) glucose concentration.
-- $nu_{G}$ is the specific uptake rate of glucose $[mM g^{-1} h^{-1}]$, which can also be predicted by the metabolic model.
+- $\nu_{G}$ is the specific uptake rate of glucose $[mM g^{-1} h^{-1}]$, which can also be predicted by the metabolic model.
 
 ### 3. Ethanol Balance
 
 Unlike glucose, sucrose, and fructose, **ethanol is produced** by the cells (rather than consumed). Hence, in a typical CSTR:
 
+```{math}
+:label: label_8
+\frac{d[E]}{dt} = D (E_{f} - E) + v_{E} X
+```
+
 where:
 
-- EEE is the ethanol concentration in the reactor.
-- EfE_fEf is the feed ethanol concentration (commonly zero if ethanol is not fed).
-- vEv_EvE is the specific production rate of ethanol determined by the metabolic model.
+- $E$ is the ethanol concentration in the reactor.
+- $E_{f}$ is the feed ethanol concentration (commonly zero if ethanol is not fed).
+- $nu_{E}$ is the specific production rate of ethanol determined by the metabolic model.
 
 Because ethanol is formed as a metabolic by-product, vEv_EvE is typically a positive term, signifying net production.
 
