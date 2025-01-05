@@ -51,7 +51,7 @@ Comparison of DFBALab model predictions and experimental data for wild-type *E. 
 Governing Equation:
 
 ```{math}
-:label: label_1
+:label: label_6
 \frac{d[X]}{dt} = 0 - v_{1} - D X + \mu X
 ```
 
@@ -67,11 +67,16 @@ In this balance, there is **no inflow of cells** (i.e., feed does not contain bi
 
 Governing Equation:
 
+```{math}
+:label: label_7
+\frac{d[G]}{dt} = D (G_{f} - G) - v_{G} X
+```
+
 where:
 
-- $G$ is the glucose concentration in the reactor [mM or g/L].
+- $G$ is the glucose concentration in the reactor $[mM or g/L]$.
 - $G_{f}$ is the feed (inlet) glucose concentration.
-- $nu_{G}$ is the specific uptake rate of glucose [mM g^{-1} h^{-1}], which can also be predicted by the metabolic model.
+- $nu_{G}$ is the specific uptake rate of glucose $[mM g^{-1} h^{-1}]$, which can also be predicted by the metabolic model.
 
 ### 3. Ethanol Balance
 
