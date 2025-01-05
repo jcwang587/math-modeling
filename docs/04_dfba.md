@@ -99,7 +99,10 @@ Because ethanol is formed as a metabolic by-product, vEv_EvE is typically a posi
 
 Oxygen transfer in a CSTR is more complex, as oxygen is often supplied via sparging or agitation to promote gas–liquid mass transfer. The basic form of the oxygen balance can still be written similarly:
 
-dOdt  =  D (Of−O)  +  kLa (Ogas−O)  −  vO X,\frac{dO}{dt} \;=\; D \,\bigl(O_f - O\bigr)\;+\; k_L a\,\bigl(O_{\text{gas}} - O\bigr)\;-\; v_O \,X,dtdO=D(Of−O)+kLa(Ogas−O)−vOX,
+```{math}
+:label: label_9
+\frac{d[O]}{dt} = D (O_{f} - O) + k_{L}a (O_{gas} - O) - v_{O} X
+```
 
 where:
 
