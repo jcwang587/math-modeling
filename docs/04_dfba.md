@@ -76,7 +76,7 @@ where:
 
 - $G$ is the glucose concentration in the reactor $[mM or g/L]$.
 - $G_{f}$ is the feed (inlet) glucose concentration.
-- $\nu_{G}$ is the specific uptake rate of glucose $[mM g^{-1} h^{-1}]$, which can also be predicted by the metabolic model.
+- $v_{G}$ is the specific uptake rate of glucose $[mM g^{-1} h^{-1}]$, which can also be predicted by the metabolic model.
 
 ### 3. Ethanol Balance
 
@@ -91,7 +91,7 @@ where:
 
 - $E$ is the ethanol concentration in the reactor.
 - $E_{f}$ is the feed ethanol concentration (commonly zero if ethanol is not fed).
-- $nu_{E}$ is the specific production rate of ethanol determined by the metabolic model.
+- $v_{E}$ is the specific production rate of ethanol determined by the metabolic model.
 
 Because ethanol is formed as a metabolic by-product, vEv_EvE is typically a positive term, signifying net production.
 
