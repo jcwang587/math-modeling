@@ -12,7 +12,7 @@ kernelspec:
 
 # Dynamic FBA
 
-Dynamic flux balance analysis (dFBA) is a computational approach that extends traditional flux balance analysis to incorporate temporal dynamics into the study of metabolic networks. By allowing reaction fluxes to vary with time in response to changing environmental or cellular conditions, dFBA provides deeper insights into system behavior and regulatory mechanisms. This primer covers the theoretical foundations of dFBA, includes several practical examples, and introduces software tools designed to perform these calculations {cite:p}`gomez2014dfbalab`.
+The acceleration in the process of genome sequencing in recent years has increased the availability of genome-scale metabolic network reconstructions for a variety of species. These genome-based networks can be used within the framework of flux balance analysis (FBA) to predict steady-state growth and uptake rates accurately. Dynamic flux balance analysis (DFBA) enables the simulation of dynamic biological systems by assuming organisms reach steady state rapidly in response to changes in the extracellular environment. Then, the rates predicted by FBA are used to update the extracellular environment. {cite:p}`mahadevan2002dfba`.
 
 Dynamic model predictions for anaerobic batch growth of wild-type *E. coli* and recombinant *S. cerevisiae* strain RWB218 mono-cultures on glucose/xylose media are shown in the following {cite:p}`hanly2011coculture`.
 
@@ -31,6 +31,8 @@ For performing comprehensive constraint-based metabolic network analyses, severa
 The Constraint-Based Reconstruction and Analysis (COBRA) Toolbox is widely recognized for its robust framework, enabling quantitative predictions of cellular and multicellular biochemical networks under various constraints. It implements an extensive range of methodologies, from fundamental reconstruction and model generation techniques to advanced, unbiased approaches for model-driven analysis. By integrating the COBRA Toolbox into a MATLAB environment, researchers gain access to a versatile platform for modeling, analyzing, and predicting diverse metabolic phenotypes at the genome scale {cite:p}`heirendt2019cobra`.
 
 Gurobi is a state-of-the-art mathematical optimization solver, widely recognized for its exceptional performance and reliability in solving a broad spectrum of linear, integer, and mixed-integer linear programming problems. Its advanced algorithms, parallelized computations, and extensive parameter tuning options make it one of the most efficient and user-friendly optimization tools available. {cite:p}`gurobi` By providing a robust MATLAB interface, Gurobi seamlessly integrates with the COBRA Toolbox and other computational frameworks, thereby streamlining model-driven analysis and facilitating rapid, large-scale solution of complex optimization problems.
+
+DFBAlab, a MATLAB-based simulator that uses the LP feasibility problem to obtain an extended system and lexicographic optimization to yield unique exchange fluxes, is presented. DFBAlab is able to simulate complex dynamic cultures with multiple species rapidly and reliably, including differential-algebraic equation (DAE) systems {cite:p}`gomez2014dfbalab`.
 
 ## A CSTR Model for Microbial Growth
 
@@ -65,3 +67,30 @@ where:
 - $G$ is the glucose concentration in the reactor [mM or g/L].
 - $G_{f}$ is the feed (inlet) glucose concentration.
 - $nu_{G}$ is the specific uptake rate of glucose [mM g^{-1} h^{-1}], which can also be predicted by the metabolic model.
+
+### 3. Ethanol Balance
+
+Unlike glucose, sucrose, and fructose, **ethanol is produced** by the cells (rather than consumed). Hence, in a typical CSTR:
+
+where:
+
+- EEE is the ethanol concentration in the reactor.
+- EfE_fEf is the feed ethanol concentration (commonly zero if ethanol is not fed).
+- vEv_EvE is the specific production rate of ethanol determined by the metabolic model.
+
+Because ethanol is formed as a metabolic by-product, vEv_EvE is typically a positive term, signifying net production.
+
+### 4. Oxygen Balance
+
+Oxygen transfer in a CSTR is more complex, as oxygen is often supplied via sparging or agitation to promote gas–liquid mass transfer. The basic form of the oxygen balance can still be written similarly:
+
+dOdt  =  D (Of−O)  +  kLa (Ogas−O)  −  vO X,\frac{dO}{dt} \;=\; D \,\bigl(O_f - O\bigr)\;+\; k_L a\,\bigl(O_{\text{gas}} - O\bigr)\;-\; v_O \,X,dtdO=D(Of−O)+kLa(Ogas−O)−vOX,
+
+where:
+
+- OOO is the dissolved oxygen concentration in the liquid phase.
+- OfO_fOf is the feed concentration of dissolved oxygen (which may be zero if the feed is not pre-saturated).
+- kLak_L akLa is the volumetric mass transfer coefficient, and (Ogas−O)\bigl(O_{\text{gas}} - O\bigr)(Ogas−O) represents the driving force for oxygen transfer from the gas phase into the liquid.
+- vOv_OvO is the specific consumption rate of oxygen by the cells.
+
+In practice, the oxygen concentration depends on both the rate of cellular consumption and the efficiency of mass transfer. Thus, for highly active cultures, oxygen can become rate-limiting if it is not supplied at a sufficiently high transfer rate.
