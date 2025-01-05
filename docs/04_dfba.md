@@ -74,7 +74,7 @@ Governing Equation:
 
 where:
 
-- $G$ is the glucose concentration in the reactor $[mM or g/L]$.
+- $G$ is the glucose concentration in the reactor $[mM]$ or $[g/L]$.
 - $G_{f}$ is the feed (inlet) glucose concentration.
 - $v_{G}$ is the specific uptake rate of glucose $[mM g^{-1} h^{-1}]$, which can also be predicted by the metabolic model.
 
