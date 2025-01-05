@@ -52,4 +52,16 @@ where:
 
 - $X$ is the biomass concentration [g/L].
 - $D$ is the dilution rate [h^{-1}], defined as the volumetric feed flow rate divided by the reactor volume.
-- 
+- $mu$ is the specific growth rate [h^{-1}], obtained from the metabolic model or flux balance analysis.
+
+In this balance, there is **no inflow of cells** (i.e., feed does not contain biomass), so the only sources and sinks are (a) the **growth** of biomass within the reactor and (b) the **washout** of cells at the outflow. The accumulation term is therefore governed by the net of growth minus outflow.
+
+### 2. Glucose Balance
+
+Governing Equation:
+
+where:
+
+- $G$ is the glucose concentration in the reactor [mM or g/L].
+- $G_{f}$ is the feed (inlet) glucose concentration.
+- $nu_{G}$ is the specific uptake rate of glucose [mM g^{-1} h^{-1}], which can also be predicted by the metabolic model.
