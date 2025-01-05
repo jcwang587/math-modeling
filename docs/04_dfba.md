@@ -93,7 +93,7 @@ where:
 - $E_{f}$ is the feed ethanol concentration (commonly zero if ethanol is not fed).
 - $v_{E}$ is the specific production rate of ethanol determined by the metabolic model.
 
-Because ethanol is formed as a metabolic by-product, vEv_EvE is typically a positive term, signifying net production.
+Because ethanol is formed as a metabolic by-product, $v_E$ is typically a positive term, signifying net production.
 
 ### 4. Oxygen Balance
 
