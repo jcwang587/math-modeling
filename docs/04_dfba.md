@@ -94,3 +94,10 @@ where:
 - vOv_OvO is the specific consumption rate of oxygen by the cells.
 
 In practice, the oxygen concentration depends on both the rate of cellular consumption and the efficiency of mass transfer. Thus, for highly active cultures, oxygen can become rate-limiting if it is not supplied at a sufficiently high transfer rate.
+
+## Example
+
+Initial biomass of 20g/L, glucose and dilution rate of, run dfba
+
+
+
