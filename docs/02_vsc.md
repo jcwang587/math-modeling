@@ -40,7 +40,7 @@ We will begin by creating a repository where you can store and manage your code 
    Choose a clear and descriptive name, such as `my-first-repo`. Keep in mind that this name will be part of the repository’s URL.
 
 4. **Add an Optional Description:**
-   You can add a short description to help others understand the purpose of your repository. For example, “A practice repository for learning Git and GitHub.”
+   You can add a short description to help others understand the purpose of your repository.
 
 5. **Set the Repository’s Visibility:**
 
@@ -65,6 +65,6 @@ By following these steps, you will have created your first GitHub repository, es
 The Git [cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf) shows the command line operations such as Add, Commit, Push, Pull and Fetch.
 
 ```{tip}
-To enable source control integration in MATLAB, you might need to go to {guilabel}`Preferences` tab, navigate to {guilabel}`General`, then select {guilabel}`Source Control`, and activate the MathWorks source control integration to be enabled.
+To enable source control integration in MATLAB, you might need to go to {guilabel}`Preferences` tab, navigate to {guilabel}`General`, then select {guilabel}`Source Control`, and activate the MathWorks source control integration.
 ```
 
