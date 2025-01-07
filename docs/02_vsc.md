@@ -65,6 +65,6 @@ By following these steps, you will have created your first GitHub repository, es
 The Git [cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf) shows the command line operations such as Add, Commit, Push, Pull and Fetch.
 
 ```{tip}
-To enable source control integration in MATLAB, you might need to go to {guilabel}`Preferences`, choose {guilabel}`General`, then {guilabel}`Source Conrol`, and activate MathWorks source control integration to be enabled.
+To enable source control integration in MATLAB, you might need to go to {guilabel}`Preferences` tab, navigate to {guilabel}`General`, then select {guilabel}`Source Control`, and activate the MathWorks source control integration to be enabled.
 ```
 
