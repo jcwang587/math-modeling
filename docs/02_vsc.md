@@ -34,7 +34,7 @@ We will begin by creating a repository where you can store and manage your code 
    After signing in, click on your profile icon in the upper-right corner of the GitHub homepage, then select **Your repositories**.
 
 2. **Create a New Repository:**
-   On the repositories page, click the **New** button. This action will open a form for creating a new repository.
+   On the repositories page, click the {guilabel}`New` button. This action will open a form for creating a new repository.
 
 3. **Name Your Repository:**
    Choose a clear and descriptive name, such as `my-first-repo`. Keep in mind that this name will be part of the repository’s URL.
@@ -50,13 +50,13 @@ We will begin by creating a repository where you can store and manage your code 
    For most learning exercises, a public repository is appropriate, as it allows you to share your work easily.
 
 6. **Initialize With a README (Recommended):**
-   By selecting “Add a README file,” you create a default file that you can edit to introduce your project and provide relevant instructions or documentation.
+   By selecting {guilabel}`Add a README file`, you create a default file that you can edit to introduce your project and provide relevant instructions or documentation.
 
 7. **Add a License (Optional):**
-   If you plan to share your code with others, consider adding a license. For educational purposes, this step is often optional.
+   If you plan to share your code with others, consider adding a license.
 
 8. **Create the Repository:**
-   Click **Create repository**. You will be taken to the main page of your newly created repository, where you can begin adding files, editing the README, and exploring other GitHub features.
+   Click {guilabel}`Create repository`. You will be taken to the main page of your newly created repository, where you can begin adding files, editing the README, and exploring other GitHub features.
 
 By following these steps, you will have created your first GitHub repository, establishing a foundation for version-controlled development and future collaboration.
 
@@ -65,6 +65,6 @@ By following these steps, you will have created your first GitHub repository, es
 The Git [cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf) shows the command line operations such as Add, Commit, Push, Pull and Fetch.
 
 ```{tip}
-To enable source control integration in MATLAB, you might need to go to Preferences and choose General, Source Conrol and activate MathWorks source control integration to be enabled.
+To enable source control integration in MATLAB, you might need to go to {guilabel}`Preferences` and choose {guilabel}`General`, {guilabel}`Source Conrol` and activate MathWorks source control integration to be enabled.
 ```
 
