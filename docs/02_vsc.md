@@ -23,7 +23,7 @@ The basic workflow for working with the remote repository.
 To get started with GitHub, you'll need to create a free personal account and verify your email address.
 
 1. Navigate to GitHub webpage [https://github.com/](https://github.com/).
-2. Click **Sign up**.
+2. Click {guilabel}`Sign up`.
 3. Follow the prompts to create your personal account.
 
 ## My First Repository
