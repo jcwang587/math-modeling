@@ -15,7 +15,7 @@ kernelspec:
 **Literate programming** is a programming paradigm introduced in 1984 by Donald Knuth {cite:p}`knuth1984literate`, in which a computer program is presented as an explanation of how it works in natural language, interwoven with the code it describes. By combining prose and source code, literate programming facilitates the communication of computational thinking, making it particularly valuable in educational settings. Typically, a markup language is used to format explanatory text blocks, and a programming language is embedded for executable code blocks.
 
 ```{note}
-This section uses Python coding as an example to demonstrate how to incorporate interactivity into literate programming. Users can run code and view outputs directly on the page without navigating elsewhere. The interactivity is powered by a kernel hosted on the public [**MyBinder**](https://mybinder.org) service. To see this in action, click the {fa}`rocket` --> {guilabel}`Live Code` button at the top of this page, and try running the code snippets below.
+This section uses Python code as an example to demonstrate how to incorporate interactivity into literate programming. Users can run code and view outputs directly on the page without navigating elsewhere by clicking the {fa}`rocket` --> {guilabel}`Live Code` button at the top of this page. The interactivity is powered by a kernel hosted on the [**MyBinder**](https://mybinder.org) service.
 ```
 
 - **Example 1: Single Code Cell**
