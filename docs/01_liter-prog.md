@@ -64,8 +64,7 @@ The screenshot for the MATLAB Live Editor.
 For the usage with MATLAB, the best native literate programming tool would be MATLAB Live Editor, which creates scripts that combine code, output, and formatted text. Divide code into manageable sections that can be run independently. View output and visualizations next to the code that produced them. Enhance your code and results with formatted text, headings, images, and hyperlinks. Insert equations using the interactive editor or create them using LaTeX. Save code, results, and formatted text in a single executable document. 
 
 ```{note}
-- It is important to note that, in the MATLAB Live Editor, code outputs can be rendered either alongside the text (in line) or to the right. The code itself can also be hidden entirely, a feature particularly relevant when viewing shared MATLAB Live Scripts. Hidden code may be the default, especially if the script’s creator intended to focus the reader’s attention on interactive elements.
-- Another key point is that MATLAB code requires functions to be defined at the end of the document. This practice often confuses users familiar with other programming languages, such as Python, where functions are commonly defined before they are called.
+- In the MATLAB Live Editor, code outputs can be rendered either alongside the text (in line) or to the right. The code itself can also be hidden entirely, by clicking on the {guilabel}`Hide Code` button on the right.
 ```
 
 ## Jupyter Notebook
