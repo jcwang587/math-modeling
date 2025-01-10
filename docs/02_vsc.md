@@ -56,7 +56,7 @@ We will begin by creating a repository where you can store and manage your code 
    If you plan to share your code with others, consider adding a license.
 
 8. **Create the Repository:**
-   Click {guilabel}`Create repository`. You will be taken to the main page of your newly created repository, where you can begin adding files, editing the README, and exploring other GitHub features.
+   Click {guilabel}`Create repository`. You will be taken to the main page of your newly created repository, where you can add files and explore other GitHub features.
 
 By following these steps, you will have created your first GitHub repository, establishing a foundation for version-controlled development and future collaboration.
 
