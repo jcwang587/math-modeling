@@ -16,6 +16,7 @@ This book presents a structured set of three modules centered around metabolic m
 
 To further enrich the learning experience, we introduce advanced visualization, GUI interfaces, Machine Learning Toolbox, and the actxserver function. It is our hope that the content, which offers clear theoretical foundations, practical guidance, and illustrative sample codes, will serve as a valuable resource to support readers on their journey in mathematical modeling within chemical engineering.
 
-<div style="text-align: right;">
+<!-- <div style="text-align: right;">
 <br><br>Jiacheng Wang<br>Peng Bai
 </div>
+ -->
