@@ -14,7 +14,7 @@ In alignment with the mission of CACHE (Computer Aids for Chemical Engineering),
 
 This book presents a structured set of three modules centered around metabolic modeling. These modules guide students through topics ranging from flux balance analysis (FBA) to spatiotemporal FBA, culminating in the in silico modeling of a Petri dish environment. To achieve this, we will employ the professional-grade Gurobi optimization solver through MATLAB’s interface, as well as specialized dynamic flux balance analysis (DFBA) toolkits such as DFBALab and COMETS. Students will not only develop proficiency in these software packages, but also refine their literature-searching skills by identifying and applying suitable genome-scale metabolic models (GSMMs).
 
-To further enrich the learning experience, we introduce advanced visualization, GUI interfaces, Machine Learning Toolbox, and the actxserver function. It is our hope that the content, which offers clear theoretical foundations, practical guidance, and illustrative sample codes, will serve as a valuable resource to support readers on their journey in mathematical modeling within chemical engineering.
+To further enrich the learning experience, we introduce advanced visualization tools, GUI interfaces, the Machine Learning Toolbox, and the actxserver function for integration with Aspen Plus. It is our hope that the content, which offers clear theoretical foundations, practical guidance, and illustrative sample codes, will serve as a valuable resource to support readers on their journey in mathematical modeling within chemical engineering.
 
 <!-- <div style="text-align: right;">
 <br><br>Jiacheng Wang<br>Peng Bai
