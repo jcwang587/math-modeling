@@ -34,6 +34,19 @@ Gurobi is a state-of-the-art mathematical optimization solver, widely recognized
 
 DFBAlab, a MATLAB-based simulator that uses the LP feasibility problem to obtain an extended system and lexicographic optimization to yield unique exchange fluxes, is presented. DFBAlab is able to simulate complex dynamic cultures with multiple species rapidly and reliably, including differential-algebraic equation (DAE) systems {cite:p}`gomez2014dfbalab`.
 
+
+
+```{tip}
+In MATLAB, you can permanently add a folder to your search path (so MATLAB can always find the functions in that folder) by following these steps:
+1. On the Home tab, in the Environment section, click Set Path (or type pathtool in the Command Window).
+2. In the Set Path dialog:
+	- Click Add Folder (or Add with Subfolders if you also want all subfolders).
+	- Select the folder containing your functions and click Open.
+	- Click Save, then Close.
+```
+
+
+
 ## A CSTR Model for Microbial Growth
 
 In a continuous stirred-tank reactor (CSTR) designed for a yeast microbial fermentation, as shown in {numref}`figure_cstr`, four extracellular components are typically tracked: biomass, glucose, oxygen, and ethanol. The reactor is operated at a constant volume with a continuous feed of nutrients (media) that supports cell growth. Below is a concise overview of the main material balances, highlighting how each component is added, consumed, or removed from the system.
