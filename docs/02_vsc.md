@@ -67,4 +67,3 @@ The Git [cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf
 ```{tip}
 To enable source control integration in MATLAB, you might need to go to {guilabel}`Preferences` tab, navigate to {guilabel}`General`, then select {guilabel}`Source Control`, and activate the MathWorks source control integration.
 ```
-
