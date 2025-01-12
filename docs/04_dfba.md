@@ -39,10 +39,7 @@ DFBAlab can be obtained by visiting the official [website](https://yoric.mit.edu
 ```{tip}
 In MATLAB, you can permanently add a folder to your search path (so MATLAB can always find the functions in that folder) by following these steps:
 1. On the {guilabel}`Home` tab, in the Environment section, click {guilabel}`Set Path`.
-2. In the Set Path dialog:
-	- Click Add Folder (or Add with Subfolders if you also want all subfolders).
-	- Select the folder containing your functions and click Open.
-	- Click Save, then Close.
+2. In the Set Path dialog, click {guilabel}`Add Folder`. Select the folder containing your functions, then click {guilabel}`Open`. Finally, click {guilabel}`Save`.
 ```
 
 
