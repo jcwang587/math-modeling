@@ -32,9 +32,7 @@ The Constraint-Based Reconstruction and Analysis (COBRA) Toolbox is widely recog
 
 Gurobi is a state-of-the-art mathematical optimization solver, widely recognized for its exceptional performance and reliability in solving a broad spectrum of linear, integer, and mixed-integer linear programming problems. Its advanced algorithms, parallelized computations, and extensive parameter tuning options make it one of the most efficient and user-friendly optimization tools available. {cite:p}`gurobi` By providing a robust MATLAB interface, Gurobi seamlessly integrates with the COBRA Toolbox and other computational frameworks, thereby streamlining model-driven analysis and facilitating rapid, large-scale solution of complex optimization problems.
 
-DFBAlab, a MATLAB-based simulator that uses the LP feasibility problem to obtain an extended system and lexicographic optimization to yield unique exchange fluxes, is presented. DFBAlab is able to simulate complex dynamic cultures with multiple species rapidly and reliably, including differential-algebraic equation (DAE) systems {cite:p}`gomez2014dfbalab`.
-
-DFBAlab can be obtained by visiting the official [website](https://yoric.mit.edu/software/dfbalab/how-obtain-dfbalab/), which is provided by the Process Systems Engineering Laboratory (PSEL) at MIT.
+DFBAlab, a MATLAB-based simulator that uses the LP feasibility problem to obtain an extended system and lexicographic optimization to yield unique exchange fluxes, is presented. DFBAlab is able to simulate complex dynamic cultures with multiple species rapidly and reliably, including differential-algebraic equation (DAE) systems {cite:p}`gomez2014dfbalab`. DFBAlab can be obtained by visiting the official [website](https://yoric.mit.edu/software/dfbalab/how-obtain-dfbalab/), which is provided by the Process Systems Engineering Laboratory (PSEL) at MIT.
 
 ```{tip}
 In MATLAB, you can permanently add a folder to your search path (so MATLAB can always find the functions in that folder) by following these steps:
