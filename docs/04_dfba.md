@@ -34,11 +34,11 @@ Gurobi is a state-of-the-art mathematical optimization solver, widely recognized
 
 DFBAlab, a MATLAB-based simulator that uses the LP feasibility problem to obtain an extended system and lexicographic optimization to yield unique exchange fluxes, is presented. DFBAlab is able to simulate complex dynamic cultures with multiple species rapidly and reliably, including differential-algebraic equation (DAE) systems {cite:p}`gomez2014dfbalab`.
 
-
+DFBAlab can be obtained by visiting the official [website](https://yoric.mit.edu/software/dfbalab/how-obtain-dfbalab/), which is provided by the Process Systems Engineering Laboratory (PSEL) at MIT.
 
 ```{tip}
 In MATLAB, you can permanently add a folder to your search path (so MATLAB can always find the functions in that folder) by following these steps:
-1. On the Home tab, in the Environment section, click Set Path (or type pathtool in the Command Window).
+1. On the {guilabel}`Home` tab, in the Environment section, click {guilabel}`Set Path`.
 2. In the Set Path dialog:
 	- Click Add Folder (or Add with Subfolders if you also want all subfolders).
 	- Select the folder containing your functions and click Open.
