@@ -93,7 +93,7 @@ where:
 
 ### 3. Ethanol Balance
 
-Unlike glucose, sucrose, and fructose, **ethanol is produced** by the cells (rather than consumed). Hence, in a typical CSTR:
+Rather than being consumed like glucose, sucrose, and fructose, **ethanol is produced** by the cells during the process of fermentation. Hence, in a typical CSTR:
 
 ```{math}
 :label: label_8
