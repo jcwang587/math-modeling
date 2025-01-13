@@ -48,7 +48,7 @@ In a continuous stirred-tank reactor (CSTR) designed for a yeast microbial ferme
 
 
 ```{figure} _static/fig4-2.png
-:height: 300px
+:height: 400px
 :name: figure_cstr
 
 Cross-sectional diagram showing the setup of a continuous stirred-tank reactor

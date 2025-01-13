@@ -12,7 +12,7 @@ kernelspec:
 
 # Spatiotemporal FBA
 
-The incorporation of genome-scale metabolic reconstructions within spatiotemporal models that account for both spatial and temporal variations in the environment is desirable to connect genes to metabolic phenotype and system function. For example, genome-scale metabolic reconstructions allow the effects of gene deletions and insertions in mutant strains to be directly investigated.
+The incorporation of genome-scale metabolic reconstructions within spatiotemporal models that account for both spatial and temporal variations in the environment is desirable to connect genes to metabolic phenotype and system function. 
 
 ## An example cell
 
@@ -26,10 +26,4 @@ COMETS is a software platform for performing computer simulations of spatially s
 A Schematic Representation of the Key Steps of COMETS Simulations.
 ```
 
-## Quickly add YAML metadata for MyST Notebooks
-
-If you have a markdown file and you'd like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:
-
-```
-jupyter-book myst init path/to/markdownfile.md
-```
+Due to the MATLAB toolbox for COMETS is not actively COMETSPy is the Python interface for running COMETS simulation.
