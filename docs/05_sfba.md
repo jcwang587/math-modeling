@@ -12,7 +12,7 @@ kernelspec:
 
 # Spatiotemporal FBA
 
-The incorporation of genome-scale metabolic reconstructions within spatiotemporal models that account for both spatial and temporal variations in the environment is desirable to connect genes to metabolic phenotype and system function. 
+The incorporation of genome-scale metabolic reconstructions within spatiotemporal models that account for both spatial and temporal variations in the environment is desirable to connect genes to metabolic phenotype and system function {cite:p}`sfba`.
 
 ## An example cell
 
