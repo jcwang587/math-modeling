@@ -47,11 +47,11 @@ In MATLAB, you can permanently add a folder to your search path (so MATLAB can a
 In a continuous stirred-tank reactor (CSTR) designed for a yeast microbial fermentation, as shown in {numref}`figure_cstr`, four extracellular components are typically tracked: biomass, glucose, oxygen, and ethanol. The reactor is operated at a constant volume with a continuous feed of nutrients (media) that supports cell growth. Below is a concise overview of the main material balances, highlighting how each component is added, consumed, or removed from the system.
 
 
-```{figure} _static/fig4-2.svg
+```{figure} _static/fig4-2.png
 :height: 300px
 :name: figure_cstr
 
-Comparison of DFBALab model predictions and experimental data for wild-type *E. coli* aerobically consuming a mixture of glucose and xylose.
+Cross-sectional diagram showing the setup of a continuous stirred-tank reactor
 ```
 
 ### 1. Biomass Balance
@@ -124,6 +124,3 @@ In practice, the oxygen concentration depends on both the rate of cellular consu
 ## Example
 
 Initial biomass of 20g/L, glucose and dilution rate of, run dfba
-
-
-
