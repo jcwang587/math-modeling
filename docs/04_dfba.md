@@ -14,7 +14,7 @@ kernelspec:
 
 Dynamic flux balance analysis (DFBA) enables the simulation of dynamic biological systems by assuming that organisms reach a steady state rapidly in response to changes in the extracellular environment {cite:p}`mahadevan2002dfba`. The fluxes predicted by FBA are then used to update the extracellular environment. Because simulations can now incorporate time-dependent changes, DFBA can provide temporal profiles of nutrient consumption, product formation, and biomass accumulation in the microbial community.
 
-For example, dynamic model predictions for anaerobic batch growth of wild-type *E. coli* and recombinant *S. cerevisiae* strain RWB218 mono-cultures on glucose/xylose media are shown below {cite:p}`hanly2011coculture`.
+For example, dynamic model predictions for anaerobic batch growth of wild-type *E. coli* on glucose/xylose media are shown below {cite:p}`hanly2011coculture`.
 
 
 ```{figure} _static/fig4-1.png
