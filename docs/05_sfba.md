@@ -26,4 +26,4 @@ COMETS is a software platform for performing computer simulations of spatially s
 A Schematic Representation of the Key Steps of COMETS Simulations.
 ```
 
-Since the MATLAB toolbox for COMETS is no longer actively maintained, we recommend installing its Python counterpart, [COMETSPy](https://github.com/segrelab/cometspy). COMETSPy serves as the Python interface for running COMETS simulations. Similar to the MATLAB interface for Gurobi, COMETSPy is not a standalone package. It is intended to be used alongside COMETS, which must be installed on the user's computer beforehand. Additionally, Gurobi is required as a dependency for running COMETS simulations.
+Since the MATLAB toolbox for COMETS is no longer actively maintained, we recommend installing its Python counterpart, [COMETSPy](https://github.com/segrelab/cometspy), which serves as the Python interface for running COMETS simulations. Similar to the MATLAB interface for Gurobi, COMETSPy is not a standalone package. It is intended to be used alongside COMETS, which must be installed on the user's computer beforehand. Additionally, Gurobi is required as a dependency for running COMETS simulations.
