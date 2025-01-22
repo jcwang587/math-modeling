@@ -121,6 +121,13 @@ where:
 
 In practice, the oxygen concentration depends on both the rate of cellular consumption and the efficiency of mass transfer. Thus, for highly active cultures, oxygen can become rate-limiting if it is not supplied at a sufficiently high transfer rate.
 
-## Example
+## Example: DFBA with iND750 Yeast Model
 
-Initial biomass of 20g/L, glucose and dilution rate of, run dfba
+You are given the iND750 genome-scale metabolic model for *S. cerevisiae*. In a laboratory setting, you want to grow this yeast under the following conditions:
+
+- **Carbon Source (Glucose)**: 20 g/L
+- **Oxygen (Gas)**: 2 mmol/L
+- **Time Span**: 100 hours
+
+Use Dynamic Flux Balance Analysis (DFBA) to determine the carbon consumption and yeast’s predicted biomass concentration (or specific growth rate) profiles under these constraints.
+

@@ -107,9 +107,9 @@ Within this chapter, we will apply a classic Yeast GEM model, iMM904, available 
 
 ## Example: FBA with iND750 Yeast Model
 
-You are given the iND750 genome-scale metabolic model for *Saccharomyces cerevisiae* (baker’s yeast). In a laboratory setting, you want to grow this yeast under the following conditions:
+You are given the iND750 genome-scale metabolic model for *S. cerevisiae*. In a laboratory setting, you want to grow this yeast under the following conditions:
 
-- **Glucose Concentration**: 20 g/L
-- **Oxygen Availability**: 2 mmol/L
+- **Carbon Source (Glucose)**: 20 g/L
+- **Oxygen (Gas)**: 2 mmol/L
 
 Use Flux Balance Analysis (FBA) to determine the yeast’s predicted biomass concentration (or specific growth rate) under these constraints.
