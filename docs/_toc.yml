@@ -15,9 +15,6 @@ parts:
   - caption: Advanced Topics
     chapters:
       - file: 06_data-vis
-      - file: 07_gui
-      - file: 08_neural-net
-      - file: 09_aspen
   - caption: Resources
     chapters:
       - file: 10_references
