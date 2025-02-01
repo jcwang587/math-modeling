@@ -67,6 +67,6 @@ In the MATLAB Live Editor, code outputs can be rendered either alongside the tex
 
 ## Jupyter Notebook
 
-**Jupyter Notebook** offers a free and open-source alternative to MATLAB Live Scripts. Identified by the `.ipynb` file extension, Jupyter Notebooks can be created online through services like Google Colab or locally with standalone clients. By default, Jupyter Notebooks use Markdown and LaTeX to format text cells and Python to execute code cells, though they support over forty programming languages. 
+**Jupyter Notebook** offers a free and open-source alternative to MATLAB Live Scripts. Identified by the `.ipynb` file extension, Jupyter Notebooks can be created online through services like Google Colab or locally with standalone clients. By default, Jupyter Notebooks use Markdown and LaTeX to format text cells and Python to execute code cells, although they also support additional programming languages.
 
 Another noteworthy feature is that Jupyter Notebooks can be rendered directly on GitHub. This [webpage](https://github.com/jupyter/notebook/blob/main/docs/source/examples/Notebook/Running%20Code.ipynb) is an example of how a Jupyter Notebook is displayed on GitHub.
