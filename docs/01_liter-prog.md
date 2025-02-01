@@ -52,8 +52,6 @@ As you can see, this example demonstrates how Python code can be combined with d
 
 **MATLAB**, a popular programming language in STEM research, provides the MATLAB Live Editor as a tool to create MATLAB Live Scripts. These scripts, identified by the `.mlx` file extension, integrate formatted text and computational code into a single, publishable file. Within these scripts, a simplified version of Markdown and LaTeX is used to format text. MATLAB Live Scripts can be created both locally with the desktop version of MATLAB and online using MATLAB Online, making them convenient for instructional use and collaboration. 
 
-The figure below shows an example of the MATLAB Live Editor in action. The left-hand side of the interface allows users to input and edit code, formatted text, and equations using LaTeX, while the right-hand side displays the results of the executed code in real time. This dual-panel layout facilitates a seamless workflow, enabling users to combine narrative descriptions with computational output. MATLAB Live Scripts are particularly useful for creating interactive tutorials, documenting research workflows, and sharing reproducible analyses, as they integrate code, results, and explanatory text into a single, organized document.
-
 ```{figure} _static/fig1-1.png
 :height: 400px
 :name: figure_example
@@ -61,7 +59,7 @@ The figure below shows an example of the MATLAB Live Editor in action. The left-
 The screenshot for the MATLAB Live Editor.
 ```
 
-For the usage with MATLAB, the best native literate programming tool would be MATLAB Live Editor, which creates scripts that combine code, output, and formatted text. Divide code into manageable sections that can be run independently. View output and visualizations next to the code that produced them. Enhance your code and results with formatted text, headings, images, and hyperlinks. Insert equations using the interactive editor or create them using LaTeX. Save code, results, and formatted text in a single executable document. 
+The figure above shows an example of the MATLAB Live Editor in action. The left-hand side of the interface allows users to input and edit code, formatted text, and equations using LaTeX, while the right-hand side displays the results of the executed code in real time. This dual-panel layout facilitates a seamless workflow, enabling users to combine narrative descriptions with computational output. MATLAB Live Scripts are particularly useful for creating interactive tutorials, documenting research workflows, and sharing reproducible analyses, as they integrate code, results, and explanatory text into a single, organized document.
 
 ```{note}
 In the MATLAB Live Editor, code outputs can be rendered either alongside the text or to the right. The code itself can also be hidden entirely, by clicking on the {guilabel}`Hide Code` button on the right.
