@@ -16,7 +16,7 @@ Data visualization plays a critical role in understanding and communicating comp
 
 ## MATLAB Plot
 
-MATLAB’s built-in `plot` function is a straightforward yet versatile tool for generating a wide range of basic visualizations. It is most commonly used to create line plots, scatter plots, and other simple chart types. To learn more about using this function, you can type `help plot` or `doc plot` in the MATLAB Command Window for tutorials and examples, or refer to the official documentation at [https://www.mathworks.com/help/matlab/ref/plot.html](https://www.mathworks.com/help/matlab/ref/plot.html).
+MATLAB’s built-in `plot` function is a straightforward yet versatile tool for generating a wide range of basic visualizations. It is most commonly used to create line plots, scatter plots, and other simple chart types. To learn more about using this function, you can type `help plot` or `doc plot` in the MATLAB Command Window for tutorials and examples, or refer to the official documentation at [here](https://www.mathworks.com/help/matlab/ref/plot.html).
 
 ## Set up Plotly
 
