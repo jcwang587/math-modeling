@@ -1,4 +1,4 @@
-# ChE 231 Mathematical Modeling SP25
+# ChE 231 Math Modeling
 
 This repository contains the source files for the Jupyter Book used in the ChE 231 Mathematical Modeling recitation class in Spring 2025.
 
