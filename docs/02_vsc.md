@@ -28,7 +28,7 @@ To get started with GitHub, you'll need to create a free personal account and ve
 
 ## My First Repository
 
-We will begin by creating a repository where you can store and manage your code projects. A repository serves as a dedicated space in which all your files, along with their version history, are kept.
+We will begin by creating a repository where you can store and manage your code projects. A repository serves as a dedicated space in which all your files, along with their version history, are kept. By following these steps, you will have created your first GitHub repository, establishing a foundation for version-controlled development and future collaboration.
 
 1. **Access Your GitHub Profile:**
    After signing in, click on your profile icon in the upper-right corner of the GitHub homepage, then select **Your repositories**.
@@ -39,7 +39,7 @@ We will begin by creating a repository where you can store and manage your code 
 3. **Name Your Repository:**
    Choose a clear and descriptive name, such as `my-first-repo`. Keep in mind that this name will be part of the repository’s URL.
 
-4. **Add an Optional Description:**
+4. **Description (Optional):**
    You can add a short description to help others understand the purpose of your repository.
 
 5. **Set the Repository’s Visibility:**
@@ -47,16 +47,14 @@ We will begin by creating a repository where you can store and manage your code 
    - **Public:** Anyone can view and clone the repository. If you want to share your work more easily, you should set it to public.
    - **Private:** Only you and collaborators you specify can access the repository.
 
-6. **Initialize With a README (Recommended):**
+6. **Initialize this repository with a README (Recommended):**
    By selecting {guilabel}`Add a README file`, you create a default file that you can edit to introduce your project and provide relevant instructions or documentation.
 
 7. **Add a License (Optional):**
-   If you plan to share your code with others, consider adding a license.
+   If you plan to make your repository open source, consider adding a license.
 
 8. **Create the Repository:**
    Click {guilabel}`Create repository`. You will be taken to the main page of your newly created repository, where you can add files and explore other GitHub features.
-
-By following these steps, you will have created your first GitHub repository, establishing a foundation for version-controlled development and future collaboration.
 
 ## Set Up Git Source Control in MATLAB
 
