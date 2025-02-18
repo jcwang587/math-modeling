@@ -56,7 +56,7 @@ We will begin by creating a repository where you can store and manage your code 
 8. **Create the Repository:**
    Click {guilabel}`Create repository`. You will be taken to the main page of your newly created repository, where you can add files and explore other GitHub features.
 
-## Set Up Git Source Control in MATLAB
+## Set Up Git Source Control with MATLAB
 
 The Git [cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf) shows the command line operations such as Add, Commit, Push, Pull and Fetch.
 
