@@ -44,10 +44,8 @@ We will begin by creating a repository where you can store and manage your code 
 
 5. **Set the Repository’s Visibility:**
 
-   - **Public:** Anyone on the internet can view and clone the repository.
+   - **Public:** Anyone can view and clone the repository. If you want to share your work more easily, you should set it to public.
    - **Private:** Only you and collaborators you specify can access the repository.
-
-   For most learning exercises, a public repository is appropriate, as it allows you to share your work easily.
 
 6. **Initialize With a README (Recommended):**
    By selecting {guilabel}`Add a README file`, you create a default file that you can edit to introduce your project and provide relevant instructions or documentation.
