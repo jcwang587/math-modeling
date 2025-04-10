@@ -10,6 +10,7 @@ LP.modelsense = 'max';
 result = gurobi(LP);
 grMax  = result.objval;
 
+
 iEx = find(contains(model.rxns, 'EX_'));
 iUpt = find(result.x(iEx)<0);
 fluxName = model.rxns(iEx(iUpt));
@@ -29,7 +30,7 @@ for i = 1:length(iScr)
     LP.ub(iEx(iScr(i))) = 0;
     result = gurobi(LP, params);
     grBlock(i) = result.objval;
-    if grBlock(i) >= 0.999999*grMax
+    if grBlock(i) >= grMax
         fluxValue = result.x(iEx(iScr));
         disp(['Alternative optima detected with respect to flux ', char(fluxName(i))]);
         table(fluxName, fluxValue)
