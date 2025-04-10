@@ -3,14 +3,14 @@ load Escherichia_coli_str_K_12_substr_MG1655.mat
 LP.A          = model.S;
 LP.obj        = model.c;
 LP.rhs        = model.b;
-LP.sense       = '=';
+LP.sense      = '=';
 LP.lb         = model.lb;
 LP.ub         = model.ub;
 LP.modelsense = 'max';
 result = gurobi(LP);
 grMax  = result.objval;
 
-
+disp('Part2')
 iEx = find(contains(model.rxns, 'EX_'));
 iUpt = find(result.x(iEx)<0);
 fluxName = model.rxns(iEx(iUpt));
