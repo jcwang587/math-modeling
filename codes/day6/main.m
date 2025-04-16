@@ -49,9 +49,6 @@ tol = 1e-5;
 ads_pot = cell(1, N);
 for i = 1 : N
     ads_pot{i} = @(y)integral(isotherm{i}, minlnP(i), y);
-
-    % Alternative analytical implementation using the polynomial coefficients; see the end of this file.
-    % ads_pot{i} = @(y)piecewise_polynomial_ads_pot(y, isotherm_pp, minlnP(i));
 end
 
 %% Parts 6 & 7
