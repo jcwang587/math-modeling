@@ -21,7 +21,7 @@ iScr = find(result.x(iEx)>0);
 fluxName = model.rxns(iEx(iScr));
 fluxValue = result.x(iEx(iScr));
 table(fluxName, fluxValue)
-
+% 
 disp('Part 3')
 % Block each non-zero secretion flux to check for alternative optima
 grBlock = zeros(1, length(iScr));
@@ -38,7 +38,7 @@ for i = 1:length(iScr)
     LP.ub(iEx(iScr)) = 1000;
 end
 
-% Write table of blocked secretion fluxes and growth rates
+% % Write table of blocked secretion fluxes and growth rates
 growthRate = grBlock';
 fluxName = model.rxns(iEx(iScr));
 table(fluxName, growthRate)
