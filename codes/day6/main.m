@@ -63,7 +63,7 @@ psi = zeros(ndata, N);
 N_tot = zeros(ndata, 1);
 Z = zeros(ndata, N);
 lnP0 = zeros(ndata, N);
-exitflags = zeros(ndata);
+exitflags = zeros(ndata, 1);
 
 lnP_binary = log(binary_reduced(:,1:2));
 for i = 1:ndata
