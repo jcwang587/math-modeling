@@ -28,5 +28,4 @@ for i = 1:N-1
 end
 
 err(1:N) = exp(lnP-lnP0) - z;  % Eqn. 1: P*y1/P_i^0 - x_i*gamma_i = 0
-
 end

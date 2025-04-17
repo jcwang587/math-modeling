@@ -6,6 +6,7 @@ unary = cell(2);
 load data.mat
 
 %% Part 1
+figure(1)
 semilogx(unary{1}(:,1), unary{1}(:,2), 'bo')
 hold on; semilogx(unary{2}(:,1), unary{2}(:,2), 'r^')
 xlabel('p / [Pa]')
@@ -38,7 +39,7 @@ semilogx(exp(p_range), isotherm{1}(p_range), 'b')
 semilogx(exp(p_range), isotherm{2}(p_range), 'r')
 
 %% Part 4
-figure;
+figure(2)
 semilogx(binary(:,2), binary(:,3), 'bo')
 hold on; semilogx(binary(:,2), binary(:,4), 'r^')
 xlabel('p_{EtOH} / [Pa]')
