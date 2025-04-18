@@ -90,5 +90,5 @@ N_predicted = N_tot .* Z;  % Eqn. 4
 
 %% Part 7: Display IAST predicted data
 hold on
-semilogx(binary_reduced(:,2), N_predicted(:, 1), 'bo', 'MarkerFaceColor', 'b')
+semilogx(binary_reduced(:,2), N_predicted(:,1), 'bo', 'MarkerFaceColor', 'b')
 semilogx(binary_reduced(:,2), N_predicted(:,2), 'r^',  'MarkerFaceColor', 'r')
